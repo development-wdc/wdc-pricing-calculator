@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDC Pricing Calculator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #0f172a;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 120px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #0c4a6e;
+    }
+    label, select, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #0284c7;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0369a1;
+    }
+    button:disabled {
+      background-color: #94a3b8;
+      cursor: not-allowed;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #065f46;
+    }
+    .error {
+      color: #dc2626;
+      font-size: 14px;
+      margin-top: -10px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .hidden {
+      display: none;
+    }
+    .proposal-section {
+      margin-top: 30px;
+      background-color: #f0f9ff;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #bae6fd;
+    }
+    .factors-section {
+      margin-bottom: 30px;
+      background-color: #f0f9ff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #bae6fd;
+    }
+    .factors-section details {
+      margin-bottom: 15px;
+    }
+    .factors-section summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #0c4a6e;
+    }
+    .factors-section table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .factors-section th, .factors-section td {
+      border: 1px solid #cbd5e1;
+      padding: 8px;
+      text-align: left;
+    }
+    .factors-section th {
+      background-color: #e0f7fa;
+      color: #0c4a6e;
+    }
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: help;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      background-color: #0c4a6e;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -100px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    .discount-badge {
+      color: #065f46;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="assets/0.png" alt="WDC Logo" class="logo" aria-label="World Disaster Center Logo">
+    <h1>WDC Smart Pricing Estimator</h1>
+
+    <div class="factors-section">
+      <h2>Pricing Factors</h2>
+      <details>
+        <summary>Base Rates</summary>
+        <table>
+          <tr><th>Requestor Type</th><th>Base Rate</th><th>Notes</th></tr>
+          <tr><td>Very Small Requestor</td><td>$5/hour ($40/day)</td><td>Affordable rate for community groups and solo volunteers</td></tr>
+          <tr><td>Individual</td><td>$50/hour ($400/day)</td><td>Supports hiring expert staff</td></tr>
+          <tr><td>Local NGO</td><td>$50/hour ($400/day)</td><td>Supports hiring expert staff</td></tr>
+          <tr><td>National NGO</td><td>$60/hour ($480/day)</td><td>Higher rate for national support</td></tr>
+          <tr><td>International Org</td><td>$75/hour ($600/day)</td><td>Highest rate for international support</td></tr>
+          <tr><td>Government</td><td>$65/hour ($520/day)</td><td>Higher rate for government entities</td></tr>
+          <tr><td>Company</td><td>$70/hour ($560/day)</td><td>Higher rate for commercial entities</td></tr>
+          <tr><td>Very Large Requestor</td><td>$80/hour ($640/day)</td><td>Highest rate for large entities</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Physical Presence Costs</summary>
+        <table>
+          <tr><th>Item</th><th>Cost</th><th>Notes</th></tr>
+          <tr><td>Per Diem</td><td>$100/day/person</td><td>Daily allowance for on-site staff</td></tr>
+          <tr><td>Return Flight</td><td>$1000/person</td><td>One return flight per person</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Country/Region Type Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>Low-income</td><td>0.8</td><td>Reduces price for lower-income regions</td></tr>
+          <tr><td>Middle-income</td><td>1.0</td><td>Standard rate</td></tr>
+          <tr><td>High-income</td><td>1.25</td><td>Increases price for higher-income regions</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Requestor Type Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>Very Small Requestor (e.g., Community Group, Solo Volunteer)</td><td>0.4</td><td>Lowest rate; eligible for 50% live support discount</td></tr>
+          <tr><td>Individual</td><td>0.5</td><td>Low rate for individuals</td></tr>
+          <tr><td>Local NGO</td><td>0.7</td><td>Moderate rate for local organizations</td></tr>
+          <tr><td>National NGO</td><td>0.9</td><td>Standard rate for national organizations</td></tr>
+          <tr><td>International Org</td><td>1.0</td><td>Standard rate for international entities</td></tr>
+          <tr><td>Government</td><td>1.15</td><td>Higher rate for government entities</td></tr>
+          <tr><td>Company</td><td>1.4</td><td>Higher rate for commercial entities</td></tr>
+          <tr><td>Very Large Requestor (e.g., Multinational Corp, Large UN Agency)</td><td>1.6</td><td>Highest rate for large entities</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Sector Type Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>WASH/Environment</td><td>1.0</td><td>Standard rate</td></tr>
+          <tr><td>Health/Protection</td><td>1.1</td><td>Slightly higher for specialized sectors</td></tr>
+          <tr><td>Education/Governance</td><td>1.05</td><td>Moderate increase for governance</td></tr>
+          <tr><td>Finance/Recovery</td><td>1.15</td><td>Higher for financial recovery</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Organization Size Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>Small</td><td>0.9</td><td>Lower rate for smaller organizations</td></tr>
+          <tr><td>Medium</td><td>1.0</td><td>Standard rate</td></tr>
+          <tr><td>Large/UN</td><td>1.15</td><td>Higher rate for large entities</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Deployment Speed Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>Normal</td><td>1.0</td><td>Standard deployment timeline</td></tr>
+          <tr><td>Express</td><td>1.15</td><td>Increased rate for faster deployment</td></tr>
+          <tr><td>Emergency</td><td>1.3</td><td>Highest rate for urgent deployment</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Disaster Phase Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>Preparedness & Resilience</td><td>0.8</td><td>Encourages proactive planning</td></tr>
+          <tr><td>Response</td><td>0.7</td><td>Lower rate to encourage immediate disaster response</td></tr>
+          <tr><td>Recovery</td><td>1.1</td><td>Higher rate for long-term recovery efforts</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Quality Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>Standard</td><td>1.0</td><td>Standard quality level</td></tr>
+          <tr><td>High Quality</td><td>1.2</td><td>Increased rate for enhanced quality</td></tr>
+          <tr><td>Premium</td><td>1.4</td><td>Highest rate for premium quality</td></tr>
+        </table>
+      </details>
+      <details>
+        <summary>Experience Level Modifiers</summary>
+        <table>
+          <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
+          <tr><td>Junior</td><td>1.0</td><td>Standard rate for junior staff</td></tr>
+          <tr><td>Medium</td><td>1.5</td><td>Higher rate for experienced staff</td></tr>
+          <tr><td>Senior</td><td>2.5</td><td>Highest rate for senior experts</td></tr>
+        </table>
+      </details>
+    </div>
+
+    <label for="service">Select Service (1 of 31)</label>
+    <select id="service" required aria-label="Select a service" onchange="togglePhysicalPresence(); updatePriceDisplay()">
+      <option value="600" selected>Real-Time Disaster Monitoring System Deployment</option>
+      <option value="650">Custom Early Warning Systems (Local or National Scale)</option>
+      <option value="500">Hazard Mapping & Vulnerability Profiling</option>
+      <option value="550">Risk Index Development for Countries or Sectors</option>
+      <option value="570">Offline Early Alert Infrastructure Deployment</option>
+      <option value="700">Predictive Dashboards Installation (Michael, Nostradamus)</option>
+      <option value="480">Community-Based Preparedness Program Design</option>
+      <option value="600">Climate Forecasting & Scenario Planning</option>
+      <option value="800">AI-Based Disaster Forecasting & Early Alerts</option>
+      <option value="680">Smart Forecasting Layers on Web Portals or Apps</option>
+      <option value="550">Rapid Field Assessment Tools (Michael Kit, Collector)</option>
+      <option value="900">Emergency Drone Support (Eagle)</option>
+      <option value="950">Satellite-Based Observation Services (Argus)</option>
+      <option value="750">Crisis Coordination Dashboards for Command Centers</option>
+      <option value="600">Real-Time Situational Reporting</option>
+      <option value="670">Displacement & Migration Monitoring (Tectra)</option>
+      <option value="700">On-Site Mission Coordination & Crisis Response</option>
+      <option value="620">Data Collection & Mapping in Low-Connectivity Areas</option>
+      <option value="690">Emergency Resource Distribution Mapping</option>
+      <option value="950">Drone + AI Integration for Damage & Victim Detection</option>
+      <option value="540">Post-Disaster Damage Mapping & Analytics</option>
+      <option value="720">Lifeline-Based Financial Recovery Deployment</option>
+      <option value="680">Rotative Credit Program Design for Local Recovery</option>
+      <option value="600">Long-Term Monitoring of Recovery Outcomes</option>
+      <option value="620">Integration of Recovery Plans with Donor Reporting</option>
+      <option value="800">Blockchain-Based Aid Flow & Tracking</option>
+      <option value="850">Smart Contracts for Disaster Insurance & Rotative Credit</option>
+      <option value="550">Emergency Crypto Wallet Setup for Crisis Finance</option>
+      <option value="580">Strategic Resilience Scorecards for Regions or Cities</option>
+      <option value="500">Interactive Risk Communication Tools</option>
+      <option value="500">Advocacy and Fundraising Support</option>
+    </select>
+
+    <label for="timemode">Billing Mode <span class="tooltip">?<span class="tooltiptext">Per Month: 22 days (Normal/Urgent) or 30 days (Crisis). Per Day/Hour varies by Requestor Type (e.g., $40-$640/day).</span></span></label>
+    <select id="timemode" onchange="updateQuantityLabel(); updatePriceDisplay();" required aria-label="Select billing mode">
+      <option value="1" selected>Per Day</option>
+      <option value="0.125">Per Hour</option>
+      <option value="30">Per Month</option>
+    </select>
+
+    <label for="quantity" id="quantityLabel">Number of Days</label>
+    <input type="number" id="quantity" value="5" min="1" max="240" step="1" required oninput="restrictNumberInput(this); updatePriceDisplay();" aria-label="Enter number of days, hours, or months">
+
+    <label for="people">Number of People Required</label>
+    <input type="number" id="people" value="2" min="1" step="1" required oninput="restrictNumberInput(this); updatePriceDisplay();" aria-label="Enter number of people required">
+
+    <label id="physicalPresenceLabel">
+      <input type="checkbox" id="physicalPresence" onchange="updatePriceDisplay();" aria-label="Physical presence required">
+      Physical Presence Required <span class="tooltip">?<span class="tooltiptext">Adds $100/day/person per diem and $1000/person return flight costs.</span></span>
+    </label>
+
+    <label for="experience">Experience Level <span class="tooltip">?<span class="tooltiptext">Senior level significantly increases price to attract top experts.</span></span></label>
+    <select id="experience" required onchange="updatePriceDisplay();" aria-label="Select experience level">
+      <option value="1" selected>Junior</option>
+      <option value="1.5">Medium</option>
+      <option value="2.5">Senior</option>
+    </select>
+
+    <label for="quality">Quality Level <span class="tooltip">?<span class="tooltiptext">Higher quality levels increase the price for enhanced service standards.</span></span></label>
+    <select id="quality" required onchange="updatePriceDisplay();" aria-label="Select quality level">
+      <option value="1" selected>Standard</option>
+      <option value="1.2">High Quality</option>
+      <option value="1.4">Premium</option>
+    </select>
+
+    <label for="emergency">Emergency Level <span class="tooltip">?<span class="tooltiptext">Affects monthly billing (22 days for Normal/Urgent, 30 for Crisis) and increases price for urgency.</span></span></label>
+    <select id="emergency" required onchange="updatePriceDisplay();" aria-label="Select emergency level">
+      <option value="1" selected>Normal</option>
+      <option value="1.15">Urgent</option>
+      <option value="1.3">Crisis</option>
+    </select>
+
+    <label for="phase">Disaster Phase <span class="tooltip">?<span class="tooltiptext">Lower rate for Response phase to encourage immediate action.</span></span></label>
+    <select id="phase" required onchange="updatePriceDisplay();" aria-label="Select disaster phase">
+      <option value="0.8">Preparedness & Resilience</option>
+      <option value="0.7" selected>Response</option>
+      <option value="1.1">Recovery</option>
+    </select>
+
+    <label for="country">Country Type <span class="tooltip">?<span class="tooltiptext">Low-income countries have lower rates; high-income increase the price.</span></span></label>
+    <select id="country" required onchange="updatePriceDisplay();" aria-label="Select country type">
+      <option value="0.8" selected>Low-income</option>
+      <option value="1">Middle-income</option>
+      <option value="1.25">High-income</option>
+    </select>
+
+    <label for="requestor">Requestor Type <span class="tooltip">?<span class="tooltiptext">Very Small Requestors: $5/hour. National NGO ($60/hour), International Org ($75/hour), others higher to support senior staff.</span></span></label>
+    <select id="requestor" onchange="toggleLiveSupport(); updatePriceDisplay();" required aria-label="Select requestor type">
+      <option value="0.4" selected>Very Small Requestor (e.g., Community Group, Solo Volunteer)</option>
+      <option value="0.5">Individual</option>
+      <option value="0.7">Local NGO</option>
+      <option value="0.9">National NGO</option>
+      <option value="1">International Org</option>
+      <option value="1.15">Government</option>
+      <option value="1.4">Company</option>
+      <option value="1.6">Very Large Requestor (e.g., Multinational Corp, Large UN Agency)</option>
+    </select>
+
+    <label id="liveSupportLabel" class="hidden">
+      <input type="checkbox" id="liveSupport" onchange="updatePriceDisplay();" aria-label="Eligible for live support">
+      Eligible for Live Support <span class="tooltip">?<span class="tooltiptext">Check if similar work was done before to receive 50% rate reduction (Very Small Requestors only).</span></span>
+    </label>
+
+    <label for="sector">Sector Type <span class="tooltip">?<span class="tooltiptext">Specialized sectors like Health or Finance increase the price.</span></span></label>
+    <select id="sector" required onchange="updatePriceDisplay();" aria-label="Select sector type">
+      <option value="1" selected>WASH/Environment</option>
+      <option value="1.1">Health/Protection</option>
+      <option value="1.05">Education/Governance</option>
+      <option value="1.15">Finance/Recovery</option>
+    </select>
+
+    <label for="size">Organization Size <span class="tooltip">?<span class="tooltiptext">Larger organizations have higher rates.</span></span></label>
+    <select id="size" required onchange="updatePriceDisplay();" aria-label="Select organization size">
+      <option value="0.9" selected>Small</option>
+      <option value="1">Medium</option>
+      <option value="1.15">Large/UN</option>
+    </select>
+
+    <label for="speed">Deployment Speed <span class="tooltip">?<span class="tooltiptext">Faster deployment speeds increase the price.</span></span></label>
+    <select id="speed" required onchange="updatePriceDisplay();" aria-label="Select deployment speed">
+      <option value="1" selected>Normal</option>
+      <option value="1.15">Express</option>
+      <option value="1.3">Emergency</option>
+    </select>
+
+    <label for="start">When Are You Ready to Start?</label>
+    <input type="date" id="start" required oninput="updatePriceDisplay();" aria-label="Select start date">
+
+    <div style="display: flex; gap: 10px;">
+      <button onclick="calculatePrice()">Calculate Final Price</button>
+      <button onclick="resetForm()" style="background-color: #6b7280;">Reset Form</button>
+    </div>
+    <div class="result" id="result" aria-live="polite">Final Price: $0</div>
+    <div class="error" id="error" style="display: none;"></div>
+
+    <div id="proposalSection" class="proposal-section hidden">
+      <h2>Submit a Proposal</h2>
+      <p>Proposals will be sent to <a href="mailto:services@worlddisastercenter.org">services@worlddisastercenter.org</a>.</p>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" placeholder="Enter your full name" required aria-label="Enter full name">
+      <label for="organization">Organization / Company</label>
+      <input type="text" id="organization" placeholder="Enter your organization" required aria-label="Enter organization">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email address" required aria-label="Enter email address">
+      <label for="role">Your Role</label>
+      <input type="text" id="role" placeholder="Enter your role" required aria-label="Enter your role">
+      <label for="suggested">Propose a Rate (Max -20% of estimate)</label>
+      <input type="number" id="suggested" placeholder="Propose your adjusted total in USD" min="0" step="0.01" required oninput="restrictNumberInput(this);" aria-label="Enter proposed price">
+      <label for="explanation">Other Details / Explanation</label>
+      <textarea id="explanation" rows="4" placeholder="Explain why this adjustment is needed or provide other details." required aria-label="Enter explanation"></textarea>
+      <label>
+        <input type="checkbox" id="consent" onchange="toggleSubmitButton()" aria-label="Consent to data handling">
+        I consent to the secure handling and confidentiality of my data.
+      </label>
+      <button id="submitButton" onclick="submitProposal()" disabled>Submit My Proposal</button>
+      <div class="error" id="proposalError" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script>
+    let finalPrice = 0;
+    let liveSupportApplied = false;
+    let physicalPresenceApplied = false;
+    let selectedService = 'Real-Time Disaster Monitoring System Deployment';
+    let billingMode = 'Per Day';
+
+    function updateQuantityLabel() {
+      const timemode = document.getElementById('timemode').value;
+      const quantityLabel = document.getElementById('quantityLabel');
+      const quantityInput = document.getElementById('quantity');
+      if (timemode === '30') {
+        billingMode = 'Per Month';
+        quantityLabel.innerText = 'Number of Months';
+        quantityInput.max = '12';
+      } else if (timemode === '1') {
+        billingMode = 'Per Day';
+        quantityLabel.innerText = 'Number of Days';
+        quantityInput.max = '30';
+      } else {
+        billingMode = 'Per Hour';
+        quantityLabel.innerText = 'Number of Hours';
+        quantityInput.max = '240';
+      }
+      quantityInput.value = Math.max(1, parseInt(quantityInput.value));
+    }
+
+    function restrictNumberInput(input) {
+      input.value = Math.max(input.min, parseFloat(input.value) || 1);
+      if (input.step === '1') {
+        input.value = Math.floor(input.value);
+      }
+    }
+
+    function toggleLiveSupport() {
+      const requestor = document.getElementById('requestor').value;
+      const liveSupportLabel = document.getElementById('liveSupportLabel');
+      const liveSupport = document.getElementById('liveSupport');
+      liveSupportLabel.classList.toggle('hidden', requestor !== '0.4');
+      if (requestor !== '0.4') {
+        liveSupport.checked = false;
+        liveSupport.disabled = true;
+      } else {
+        liveSupport.disabled = false;
+      }
+      updatePriceDisplay();
+    }
+
+    function togglePhysicalPresence() {
+      const service = document.getElementById('service').value;
+      const nonPhysicalServices = ['500', '580']; // Advocacy and Fundraising, Interactive Risk Communication Tools
+      const physicalPresenceLabel = document.getElementById('physicalPresenceLabel');
+      const physicalPresence = document.getElementById('physicalPresence');
+      const isNonPhysical = nonPhysicalServices.includes(service);
+      physicalPresenceLabel.classList.toggle('hidden', isNonPhysical);
+      physicalPresence.disabled = isNonPhysical;
+      if (isNonPhysical) {
+        physicalPresence.checked = false;
+      }
+      updatePriceDisplay();
+    }
+
+    function updatePriceDisplay() {
+      if (finalPrice > 0) {
+        const requestor = document.getElementById('requestor').value;
+        const liveSupport = document.getElementById('liveSupport').checked;
+        liveSupportApplied = requestor === '0.4' && liveSupport;
+        physicalPresenceApplied = document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled;
+        let displayPrice = liveSupportApplied ? finalPrice * 0.5 : finalPrice;
+        let resultText = `Price for ${selectedService}, ${billingMode}: $${displayPrice.toFixed(2)}`;
+        if (liveSupportApplied) resultText += ' (Live Support Discount Applied)';
+        if (physicalPresenceApplied) resultText += ' (Includes Physical Presence Costs)';
+        document.getElementById('result').innerText = resultText;
+      }
+    }
+
+    function showError(elementId, message) {
+      console.error(`Error: ${message}`);
+      const errorElement = document.getElementById(elementId);
+      errorElement.innerText = message;
+      errorElement.style.display = 'block';
+      setTimeout(() => {
+        errorElement.style.display = 'none';
+      }, 5000);
+    }
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+
+    function validateDate(dateStr) {
+      const selectedDate = new Date(dateStr);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return selectedDate >= today;
+    }
+
+    function toggleSubmitButton() {
+      const consent = document.getElementById('consent').checked;
+      document.getElementById('submitButton').disabled = !consent;
+    }
+
+    function calculatePrice() {
+      // Reset error messages
+      document.getElementById('error').style.display = 'none';
+
+      // Get input values
+      const serviceRate = parseFloat(document.getElementById('service').value);
+      selectedService = document.getElementById('service').options[document.getElementById('service').selectedIndex].text;
+      const mode = parseFloat(document.getElementById('timemode').value);
+      const quantity = parseFloat(document.getElementById('quantity').value);
+      const people = parseFloat(document.getElementById('people').value);
+      const quality = parseFloat(document.getElementById('quality').value);
+      const emergency = parseFloat(document.getElementById('emergency').value);
+      const phase = parseFloat(document.getElementById('phase').value);
+      const country = parseFloat(document.getElementById('country').value);
+      const requestor = parseFloat(document.getElementById('requestor').value);
+      const sector = parseFloat(document.getElementById('sector').value);
+      const size = parseFloat(document.getElementById('size').value);
+      const speed = parseFloat(document.getElementById('speed').value);
+      const experience = parseFloat(document.getElementById('experience').value);
+      const startDate = document.getElementById('start').value;
+      const liveSupport = document.getElementById('liveSupport').checked;
+      const physicalPresence = document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled;
+
+      // Validate inputs
+      if (!serviceRate || !mode || !quality || !emergency || !phase || !country || !requestor || !sector || !size || !speed || !experience) {
+        showError('error', 'Please select valid options for all fields.');
+        return;
+      }
+      if (quantity <= 0 || isNaN(quantity)) {
+        showError('error', `Please enter a valid number of ${mode === 30 ? 'months' : mode === 1 ? 'days' : 'hours'}.`);
+        return;
+      }
+      if (quantity > (mode === 30 ? 12 : mode === 1 ? 30 : 240)) {
+        showError('error', `Maximum is ${mode === 30 ? '12 months' : mode === 1 ? '30 days' : '240 hours (equivalent to 30 days)'}.`);
+        return;
+      }
+      if (people <= 0 || isNaN(people)) {
+        showError('error', 'Number of people must be a positive integer.');
+        return;
+      }
+      if (!startDate || !validateDate(startDate)) {
+        showError('error', 'Start date must be today or in the future.');
+        return;
+      }
+      if (liveSupport && requestor !== 0.4) {
+        showError('error', 'Live support is only available for Very Small Requestors.');
+        return;
+      }
+
+      // Calculate base rate based on requestor type
+      let baseRate;
+      switch (requestor) {
+        case 0.4: baseRate = mode === 1 ? 40 : mode === 30 ? 40 : 5; break; // Very Small
+        case 0.5: baseRate = mode === 1 ? 400 : mode === 30 ? 400 : 50; break; // Individual
+        case 0.7: baseRate = mode === 1 ? 400 : mode === 30 ? 400 : 50; break; // Local NGO
+        case 0.9: baseRate = mode === 1 ? 480 : mode === 30 ? 480 : 60; break; // National NGO
+        case 1: baseRate = mode === 1 ? 600 : mode === 30 ? 600 : 75; break; // International Org
+        case 1.15: baseRate = mode === 1 ? 520 : mode === 30 ? 520 : 65; break; // Government
+        case 1.4: baseRate = mode === 1 ? 560 : mode === 30 ? 560 : 70; break; // Company
+        case 1.6: baseRate = mode === 1 ? 640 : mode === 30 ? 640 : 80; break; // Very Large
+      }
+
+      // Calculate days for physical presence and billing
+      let days;
+      if (mode === 30) {
+        const daysPerMonth = emergency === 1.3 ? 30 : 22;
+        days = daysPerMonth * quantity;
+      } else if (mode === 1) {
+        days = quantity;
+      } else {
+        days = Math.ceil(quantity / 8);
+      }
+
+      // Calculate base price
+      const basePrice = baseRate * (mode === 30 ? days : quantity) * people;
+
+      // Calculate multiplier (average of modifiers)
+      const modifiers = [quality, emergency, phase, country, requestor, sector, size, speed, experience];
+      const multiplier = modifiers.reduce((sum, val) => sum + val, 0) / modifiers.length;
+
+      // Calculate service price
+      finalPrice = basePrice * (serviceRate / 1000) * multiplier;
+
+      // Add physical presence costs
+      if (physicalPresence) {
+        const perDiem = 100 * people * days;
+        const flights = 1000 * people;
+        finalPrice += perDiem + flights;
+        physicalPresenceApplied = true;
+      } else {
+        physicalPresenceApplied = false;
+      }
+
+      // Apply live support discount
+      liveSupportApplied = requestor === 0.4 && liveSupport;
+      const displayPrice = liveSupportApplied ? finalPrice * 0.5 : finalPrice;
+
+      // Display result
+      let resultText = `Price for ${selectedService}, ${billingMode}: $${displayPrice.toFixed(2)}`;
+      if (liveSupportApplied) resultText += ' (Live Support Discount Applied)';
+      if (physicalPresenceApplied) resultText += ' (Includes Physical Presence Costs)';
+      document.getElementById('result').innerText = resultText;
+      document.getElementById('proposalSection').classList.remove('hidden');
+    }
+
+    function submitProposal() {
+      // Reset error messages
+      document.getElementById('proposalError').style.display = 'none';
+
+      // Get form values
+      const fullname = document.getElementById('fullname').value.trim();
+      const organization = document.getElementById('organization').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const role = document.getElementById('role').value.trim();
+      const suggested = parseFloat(document.getElementById('suggested').value);
+      const explanation = document.getElementById('explanation').value.trim();
+      const consent = document.getElementById('consent').checked;
+      const startDate = document.getElementById('start').value;
+      const phase = document.getElementById('phase').options[document.getElementById('phase').selectedIndex].text;
+      const requestor = document.getElementById('requestor').options[document.getElementById('requestor').selectedIndex].text;
+      const country = document.getElementById('country').options[document.getElementById('country').selectedIndex].text;
+      const sector = document.getElementById('sector').options[document.getElementById('sector').selectedIndex].text;
+      const size = document.getElementById('size').options[document.getElementById('size').selectedIndex].text;
+      const speed = document.getElementById('speed').options[document.getElementById('speed').selectedIndex].text;
+      const quality = document.getElementById('quality').options[document.getElementById('quality').selectedIndex].text;
+      const experience = document.getElementById('experience').options[document.getElementById('experience').selectedIndex].text;
+      const physicalPresence = document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled;
+
+      // Validate form inputs
+      if (!fullname) {
+        showError('proposalError', 'Full name is required.');
+        return;
+      }
+      if (!organization) {
+        showError('proposalError', 'Organization is required.');
+        return;
+      }
+      if (!email) {
+        showError('proposalError', 'Email address is required.');
+        return;
+      }
+      if (!validateEmail(email)) {
+        showError('proposalError', 'Please enter a valid email address.');
+        return;
+      }
+      if (!role) {
+        showError('proposalError', 'Role is required.');
+        return;
+      }
+      if (isNaN(suggested) || suggested < 0) {
+        showError('proposalError', 'Proposed price must be a valid non-negative number.');
+        return;
+      }
+      if (!explanation) {
+        showError('proposalError', 'Explanation is required.');
+        return;
+      }
+      if (!consent) {
+        showError('proposalError', 'You must agree to the confidentiality policy.');
+        return;
+      }
+
+      // Validate proposed price
+      const displayPrice = liveSupportApplied ? finalPrice * 0.5 : finalPrice;
+      const minAllowedPrice = displayPrice * 0.8;
+      if (suggested < minAllowedPrice) {
+        showError('proposalError', `Proposed price cannot be less than 80% of the estimate ($${minAllowedPrice.toFixed(2)}).`);
+        return;
+      }
+
+      // Confirm submission
+      if (!confirm(`Please review your proposal:\n\nService: ${selectedService}\nBilling Mode: ${billingMode}\nPhase: ${phase}\nStart Date: ${startDate}\nRequestor Type: ${requestor}\nCountry Type: ${country}\nSector Type: ${sector}\nOrganization Size: ${size}\nDeployment Speed: ${speed}\nQuality: ${quality}\nExperience Level: ${experience}\nPhysical Presence: ${physicalPresence ? 'Yes' : 'No'}\nPrice: $${displayPrice.toFixed(2)}${liveSupportApplied ? ' (Live Support)' : ''}${physicalPresenceApplied ? ' (Physical Presence)' : ''}\nProposed Price: $${suggested.toFixed(2)}\nName: ${fullname}\nOrganization: ${organization}\nEmail: ${email}\nRole: ${role}\n\nProceed with submission?`)) {
+        return;
+      }
+
+      // Simulate form submission
+      alert(`✅ Proposal submitted to services@worlddisastercenter.org!\n\nDetails:\nService: ${selectedService}\nBilling Mode: ${billingMode}\nPhase: ${phase}\nStart Date: ${startDate}\nRequestor Type: ${requestor}\nCountry Type: ${country}\nSector Type: ${sector}\nOrganization Size: ${size}\nDeployment Speed: ${speed}\nQuality: ${quality}\nExperience Level: ${experience}\nPhysical Presence: ${physicalPresence ? 'Yes' : 'No'}\nName: ${fullname}\nOrganization: ${organization}\nEmail: ${email}\nRole: ${role}\nProposed Price: $${suggested.toFixed(2)}\nLive Support: ${liveSupportApplied ? 'Yes' : 'No'}\nExplanation: ${explanation}\n\nOur team will contact you shortly.`);
+
+      // Reset form
+      resetForm();
+    }
+
+    function resetForm() {
+      document.getElementById('service').value = '600';
+      document.getElementById('timemode').value = '1';
+      document.getElementById('quantity').value = '5';
+      document.getElementById('people').value = '2';
+      document.getElementById('physicalPresence').checked = false;
+      document.getElementById('experience').value = '1';
+      document.getElementById('quality').value = '1';
+      document.getElementById('emergency').value = '1';
+      document.getElementById('phase').value = '0.7';
+      document.getElementById('country').value = '0.8';
+      document.getElementById('requestor').value = '0.4';
+      document.getElementById('sector').value = '1';
+      document.getElementById('size').value = '0.9';
+      document.getElementById('speed').value = '1';
+      document.getElementById('start').value = '';
+      document.getElementById('liveSupport').checked = false;
+      document.getElementById('fullname').value = '';
+      document.getElementById('organization').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('role').value = '';
+      document.getElementById('suggested').value = '';
+      document.getElementById('explanation').value = '';
+      document.getElementById('consent').checked = false;
+      document.getElementById('submitButton').disabled = true;
+      document.getElementById('result').innerText = 'Final Price: $0';
+      document.getElementById('proposalSection').classList.add('hidden');
+      finalPrice = 0;
+      liveSupportApplied = false;
+      physicalPresenceApplied = false;
+      selectedService = 'Real-Time Disaster Monitoring System Deployment';
+      billingMode = 'Per Day';
+      updateQuantityLabel();
+      toggleLiveSupport();
+      togglePhysicalPresence();
+    }
+
+    // Initialize on page load
+    updateQuantityLabel();
+    toggleLiveSupport();
+    togglePhysicalPresence();
+  </script>
+</body>
+</html>
