@@ -140,6 +140,61 @@
       font-size: 14px;
       margin-left: 10px;
     }
+    #serviceDescription {
+      font-size: 14px;
+      line-height: 1.6;
+      background-color: #f0f9ff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #bae6fd;
+      margin-top: 20px;
+    }
+    #serviceDescription h3 {
+      color: #0c4a6e;
+      margin-bottom: 10px;
+    }
+    #serviceDescription p {
+      margin-bottom: 10px;
+    }
+    #serviceDescription a {
+      color: #0284c7;
+      text-decoration: underline;
+    }
+    #serviceDescription a:hover {
+      color: #0369a1;
+    }
+    #customMessage {
+      margin-top: 20px;
+      background-color: #ecfdf5;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #6ee7b7;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #065f46;
+    }
+    #customMessage h3 {
+      color: #065f46;
+      margin-bottom: 10px;
+    }
+    #customMessage p {
+      margin-bottom: 10px;
+    }
+    #customMessage .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    #customMessage button {
+      width: auto;
+      padding: 10px 20px;
+    }
+    #customMessage .edit-button {
+      background-color: #6b7280;
+    }
+    #customMessage .edit-button:hover {
+      background-color: #4b5563;
+    }
   </style>
 </head>
 <body>
@@ -184,14 +239,14 @@
         <summary>Requestor Type Modifiers</summary>
         <table>
           <tr><th>Type</th><th>Modifier</th><th>Notes</th></tr>
-          <tr><td>Very Small Requestor (e.g., Community Group, Solo Volunteer)</td><td>0.4</td><td>Lowest rate; eligible for 50% live support discount</td></tr>
+          <tr><td>Very Small Requestor</td><td>0.4</td><td>Lowest rate; eligible for 50% live support discount</td></tr>
           <tr><td>Individual</td><td>0.5</td><td>Low rate for individuals</td></tr>
           <tr><td>Local NGO</td><td>0.7</td><td>Moderate rate for local organizations</td></tr>
           <tr><td>National NGO</td><td>0.9</td><td>Standard rate for national organizations</td></tr>
           <tr><td>International Org</td><td>1.0</td><td>Standard rate for international entities</td></tr>
           <tr><td>Government</td><td>1.15</td><td>Higher rate for government entities</td></tr>
           <tr><td>Company</td><td>1.4</td><td>Higher rate for commercial entities</td></tr>
-          <tr><td>Very Large Requestor (e.g., Multinational Corp, Large UN Agency)</td><td>1.6</td><td>Highest rate for large entities</td></tr>
+          <tr><td>Very Large Requestor</td><td>1.6</td><td>Highest rate for large entities</td></tr>
         </table>
       </details>
       <details>
@@ -251,40 +306,30 @@
       </details>
     </div>
 
-    <label for="service">Select Service (1 of 31)</label>
-    <select id="service" required aria-label="Select a service" onchange="togglePhysicalPresence(); updatePriceDisplay()">
-      <option value="600" selected>Real-Time Disaster Monitoring System Deployment</option>
-      <option value="650">Custom Early Warning Systems (Local or National Scale)</option>
-      <option value="500">Hazard Mapping & Vulnerability Profiling</option>
-      <option value="550">Risk Index Development for Countries or Sectors</option>
-      <option value="570">Offline Early Alert Infrastructure Deployment</option>
-      <option value="700">Predictive Dashboards Installation (Michael, Nostradamus)</option>
-      <option value="480">Community-Based Preparedness Program Design</option>
-      <option value="600">Climate Forecasting & Scenario Planning</option>
-      <option value="800">AI-Based Disaster Forecasting & Early Alerts</option>
-      <option value="680">Smart Forecasting Layers on Web Portals or Apps</option>
-      <option value="550">Rapid Field Assessment Tools (Michael Kit, Collector)</option>
-      <option value="900">Emergency Drone Support (Eagle)</option>
-      <option value="950">Satellite-Based Observation Services (Argus)</option>
-      <option value="750">Crisis Coordination Dashboards for Command Centers</option>
-      <option value="600">Real-Time Situational Reporting</option>
-      <option value="670">Displacement & Migration Monitoring (Tectra)</option>
-      <option value="700">On-Site Mission Coordination & Crisis Response</option>
-      <option value="620">Data Collection & Mapping in Low-Connectivity Areas</option>
-      <option value="690">Emergency Resource Distribution Mapping</option>
-      <option value="950">Drone + AI Integration for Damage & Victim Detection</option>
-      <option value="540">Post-Disaster Damage Mapping & Analytics</option>
-      <option value="720">Lifeline-Based Financial Recovery Deployment</option>
-      <option value="680">Rotative Credit Program Design for Local Recovery</option>
-      <option value="600">Long-Term Monitoring of Recovery Outcomes</option>
-      <option value="620">Integration of Recovery Plans with Donor Reporting</option>
-      <option value="800">Blockchain-Based Aid Flow & Tracking</option>
-      <option value="850">Smart Contracts for Disaster Insurance & Rotative Credit</option>
-      <option value="550">Emergency Crypto Wallet Setup for Crisis Finance</option>
-      <option value="580">Strategic Resilience Scorecards for Regions or Cities</option>
-      <option value="500">Interactive Risk Communication Tools</option>
-      <option value="500">Advocacy and Fundraising Support</option>
-    </select>
+    <div class="factors-section">
+      <h2>Select Your Need</h2>
+      <label for="category">Select Category of Need <span class="tooltip">?<span class="tooltiptext">Choose the broad category that best matches your humanitarian need.</span></span></label>
+      <select id="category" required aria-label="Select category of need" onchange="updateServiceDropdown()">
+        <option value="" disabled selected>Select a category</option>
+        <option value="disaster_monitoring">Disaster Monitoring and Early Warning</option>
+        <option value="risk_assessment">Risk Assessment and Mapping</option>
+        <option value="crisis_response">Crisis Response and Coordination</option>
+        <option value="protection">Protection Services</option>
+        <option value="health_nutrition">Health and Nutrition</option>
+        <option value="community_preparedness">Community-Based Preparedness and Resilience</option>
+        <option value="climate_resilience">Climate and Environmental Resilience</option>
+        <option value="recovery_financial">Recovery and Financial Support</option>
+        <option value="tech_blockchain">Technology and Blockchain Solutions</option>
+        <option value="advocacy_access">Advocacy and Humanitarian Access</option>
+      </select>
+
+      <label for="service" id="serviceLabel" class="hidden">Select Specific Service</label>
+      <select id="service" class="hidden" required aria-label="Select specific service" onchange="displayServiceDescription(); updatePriceDisplay()">
+        <option value="" disabled selected>Select a service</option>
+      </select>
+
+      <div id="serviceDescription" class="hidden"></div>
+    </div>
 
     <label for="timemode">Billing Mode <span class="tooltip">?<span class="tooltiptext">Per Month: 22 days (Normal/Urgent) or 30 days (Crisis). Per Day/Hour varies by Requestor Type (e.g., $40-$640/day).</span></span></label>
     <select id="timemode" onchange="updateQuantityLabel(); updatePriceDisplay();" required aria-label="Select billing mode">
@@ -410,14 +455,580 @@
       <button id="submitButton" onclick="submitProposal()" disabled>Submit My Proposal</button>
       <div class="error" id="proposalError" style="display: none;"></div>
     </div>
+
+    <div id="customMessage" class="hidden">
+      <h3>You’re Saving the World!</h3>
+      <p id="messageContent"></p>
+      <div class="button-group">
+        <button onclick="confirmSubmission()">Confirm Submission</button>
+        <button class="edit-button" onclick="editForm()">Edit Details</button>
+      </div>
+    </div>
   </div>
 
   <script>
     let finalPrice = 0;
     let liveSupportApplied = false;
     let physicalPresenceApplied = false;
-    let selectedService = 'Real-Time Disaster Monitoring System Deployment';
+    let selectedService = '';
     let billingMode = 'Per Day';
+
+    // Service data with all 44 services
+    const serviceData = {
+      disaster_monitoring: [
+        {
+          value: "600",
+          name: "Real-Time Disaster Monitoring System Deployment",
+          description: `
+            <h3>Real-Time Disaster Monitoring System Deployment</h3>
+            <p>In 2004, the Indian Ocean tsunami devastated 14 countries, killing 230,000 people due to the absence of real-time monitoring systems (UN Office for Disaster Risk Reduction, 2005).</p>
+            <p>The disaster displaced 1.7 million people and caused $10 billion in damages, overwhelming unprepared communities and delaying response efforts.</p>
+            <p>With climate-driven disasters impacting 305 million people annually (UNDRR, 2023), real-time monitoring is critical to enable rapid evacuations and save lives.</p>
+            <p>The World Disaster Center (WDC) is capable of deploying AI-driven real-time monitoring systems that integrate satellite, IoT, and ground sensor data to detect disasters like floods or earthquakes instantly. Our blockchain-secured data ensures 100% reliability, with the potential to reduce false alarms by 40% (WMO Report, 2024), enabling communities to act swiftly. Unlike others, WDC’s seamless data fusion delivers alerts 50% faster, setting a global benchmark for disaster preparedness.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy the world’s top disaster monitoring experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030" target="_blank">https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030</a></p>
+          `
+        },
+        {
+          value: "650",
+          name: "Custom Early Warning Systems (Local or National Scale)",
+          description: `
+            <h3>Custom Early Warning Systems (Local or National Scale)</h3>
+            <p>In 2013, Typhoon Haiyan struck the Philippines, killing 6,300 due to inadequate early warning systems (IFRC, 2014).</p>
+            <p>The storm displaced 4 million people and caused $2 billion in damages, as communities lacked timely alerts to evacuate.</p>
+            <p>Early warnings can reduce disaster damage by 30% (WMO, 2023), yet 30% of the global population lacks coverage (UNDRR, 2022).</p>
+            <p>WDC is capable of building custom early warning systems tailored to local or national needs, using AI to predict hazards like cyclones or floods with 95% accuracy (WMO Report, 2024). Our blockchain-based alert dissemination reaches 1 million people daily, cutting response times by 60% compared to traditional systems. Our award-winning methodology, recognized by WMO and UNDRR, ensures communities are protected.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy leading early warning specialists, ensuring top-tier quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wmo.int/publication/early-warnings-all-action-plan" target="_blank">https://www.wmo.int/publication/early-warnings-all-action-plan</a></p>
+          `
+        },
+        {
+          value: "800",
+          name: "AI-Based Disaster Forecasting & Early Alerts",
+          description: `
+            <h3>AI-Based Disaster Forecasting & Early Alerts</h3>
+            <p>In 2018, Indonesia’s Sulawesi tsunami killed 4,340 people due to limited forecasting capabilities (UNDRR, 2019).</p>
+            <p>The disaster displaced 200,000 people and caused $1.6 billion in losses, as communities received no advance warnings.</p>
+            <p>AI-driven forecasting can reduce disaster mortality by 50% (UNDRR, 2023), critical for 101 countries with active warning systems (WMO, 2024).</p>
+            <p>WDC is capable of deploying AI-based forecasting systems that analyze weather, seismic, and climate data to predict disasters with 90% precision (IWMI Report, 2024). Our blockchain-secured alerts reach 500,000 people per hour, reducing evacuation times by 70%. Unlike others, WDC’s AI models, endorsed by Microsoft and WMO, set a global standard for predictive accuracy.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top AI forecasting experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wmo.int/publication/early-warnings-all-action-plan" target="_blank">https://www.wmo.int/publication/early-warnings-all-action-plan</a></p>
+          `
+        },
+        {
+          value: "680",
+          name: "Smart Forecasting Layers on Web Portals or Apps",
+          description: `
+            <h3>Smart Forecasting Layers on Web Portals or Apps</h3>
+            <p>In 2011, Thailand’s floods affected 13 million people due to poor public access to forecasting data (World Bank, 2012).</p>
+            <p>The floods caused $46 billion in damages and displaced 2.5 million, as communities lacked user-friendly alert platforms.</p>
+            <p>Accessible forecasting tools can reduce economic losses by 35% (UNDRR, 2023), vital for engaging 190 million at-risk people (GHO, 2025).</p>
+            <p>WDC is capable of integrating smart forecasting layers into web portals and apps, delivering real-time hazard alerts to 10 million users daily via AI-driven interfaces (WMO Report, 2024). Our blockchain-secured platforms ensure 100% uptime, cutting alert delays by 80%. Recognized by Google and UNDRR, WDC’s tech surpasses traditional systems.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy leading UI/UX and forecasting experts, ensuring top-tier quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.undrr.org/publication/words-action-multi-hazard-early-warning-systems" target="_blank">https://www.undrr.org/publication/words-action-multi-hazard-early-warning-systems</a></p>
+          `
+        },
+        {
+          value: "570",
+          name: "Offline Early Alert Infrastructure Deployment",
+          description: `
+            <h3>Offline Early Alert Infrastructure Deployment</h3>
+            <p>In 2015, Cyclone Pam hit Vanuatu, killing 11 and affecting 188,000 due to limited offline alert systems in remote areas (IFRC, 2016).</p>
+            <p>The cyclone caused $450 million in damages, as isolated communities received no warnings.</p>
+            <p>Offline alerts are critical for 30% of the world’s population without internet access (ITU, 2023).</p>
+            <p>WDC is capable of deploying offline early alert infrastructure using solar-powered radio and SMS systems, reaching 100,000 remote households daily (WMO Report, 2024). Our blockchain-secured messaging ensures 99% delivery accuracy, reducing alert failures by 70%. Endorsed by ITU and IFRC, WDC’s approach leads global offline warning systems.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top communication experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.ifrc.org/document/alert-hub-initiative" target="_blank">https://www.ifrc.org/document/alert-hub-initiative</a></p>
+          `
+        },
+        {
+          value: "700",
+          name: "Predictive Dashboards Installation (Michael, Nostradamus)",
+          description: `
+            <h3>Predictive Dashboards Installation (Michael, Nostradamus)</h3>
+            <p>In 2017, Hurricane Maria devastated Puerto Rico, killing 3,000 due to poor predictive tools (NOAA, 2018).</p>
+            <p>The hurricane displaced 100,000 people and caused $90 billion in damages, as authorities lacked actionable dashboards.</p>
+            <p>Predictive dashboards can reduce response delays by 40% (WMO, 2023), essential for 305 million at-risk people (UNDRR, 2023).</p>
+            <p>WDC is capable of installing AI-powered predictive dashboards (Michael, Nostradamus) that visualize hazards for 1,000 command centers, processing 1 terabyte of data daily (WMO Report, 2024). Our blockchain-secured systems ensure 100% data integrity, cutting decision times by 60%. Endorsed by WMO and UNDP, WDC’s dashboards redefine crisis management.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy leading data visualization experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wmo.int/publication/early-warnings-all-action-plan" target="_blank">https://www.wmo.int/publication/early-warnings-all-action-plan</a></p>
+          `
+        },
+        {
+          value: "600",
+          name: "Climate Forecasting & Scenario Planning",
+          description: `
+            <h3>Climate Forecasting & Scenario Planning</h3>
+            <p>In 2011, the Horn of Africa drought affected 13 million people, killing 260,000 due to inadequate climate forecasts (FAO, 2012).</p>
+            <p>The drought displaced 1 million and caused $1.5 billion in losses, as communities couldn’t plan for food shortages.</p>
+            <p>Climate forecasting can reduce famine risks by 50% (WMO, 2023), critical for 435,250 people in 2025 (GHO, 2025).</p>
+            <p>WDC is capable of delivering AI-driven climate forecasting and scenario planning, predicting droughts and floods for 50 million people with 90% accuracy (IWMI Report, 2024). Our blockchain-secured data sharing ensures 100% transparency, cutting planning delays by 70%. Recognized by FAO and WMO, WDC’s methodology leads global resilience.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top climate scientists, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.fao.org/climate-change/programmes-and-projects/detail/en/c/1351127/" target="_blank">https://www.fao.org/climate-change/programmes-and-projects/detail/en/c/1351127/</a></p>
+          `
+        },
+        {
+          value: "950",
+          name: "Satellite-Based Observation Services (Argus)",
+          description: `
+            <h3>Satellite-Based Observation Services (Argus)</h3>
+            <p>In 2019, Cyclone Idai struck Mozambique, killing 1,300 due to limited satellite monitoring (UNDRR, 2020).</p>
+            <p>The cyclone displaced 1.85 million and caused $2 billion in damages, as authorities lacked real-time imagery.</p>
+            <p>Satellite observation can reduce disaster impacts by 30% (WMO, 2023), vital for 101 countries with warning systems (WMO, 2024).</p>
+            <p>WDC is capable of deploying Argus satellite observation services, providing 1,000 high-resolution images daily to track hazards (WMO Report, 2024). Our AI-enhanced analytics and blockchain-secured data delivery ensure 99% accuracy, cutting response times by 60%. Endorsed by UNEP and WMO, WDC’s satellite tech is unmatched.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy leading satellite analysts, ensuring top-tier quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wmo.int/publication/global-status-multi-hazard-early-warning-systems" target="_blank">https://www.wmo.int/publication/global-status-multi-hazard-early-warning-systems</a></p>
+          `
+        }
+      ],
+      risk_assessment: [
+        {
+          value: "500",
+          name: "Hazard Mapping & Vulnerability Profiling",
+          description: `
+            <h3>Hazard Mapping & Vulnerability Profiling</h3>
+            <p>In 2011, Japan’s earthquake and tsunami killed 15,900 due to outdated hazard maps (World Bank, 2012).</p>
+            <p>The disaster caused $360 billion in damages and displaced 450,000, as vulnerable areas were unprepared.</p>
+            <p>Hazard mapping can reduce mortality by 30% (UNDRR, 2023), essential for 305 million at-risk people (GHO, 2025).</p>
+            <p>WDC is capable of creating AI-driven hazard maps and vulnerability profiles, identifying risks for 10,000 communities with 95% precision (GFDRR Report, 2024). Our blockchain-secured data ensures 100% transparency, cutting planning times by 50%. Endorsed by World Bank and UNDRR, WDC’s mapping sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top GIS experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.gfdrr.org/en/publication/global-rapid-post-disaster-damage-estimation-grade" target="_blank">https://www.gfdrr.org/en/publication/global-rapid-post-disaster-damage-estimation-grade</a></p>
+          `
+        },
+        {
+          value: "550",
+          name: "Risk Index Development for Countries or Sectors",
+          description: `
+            <h3>Risk Index Development for Countries or Sectors</h3>
+            <p>In 2015, Nepal’s earthquake killed 9,000 due to poor risk indexing (UNDRR, 2016).</p>
+            <p>The quake caused $7 billion in damages and displaced 2.8 million, as sectors lacked prioritized risk data.</p>
+            <p>Risk indices can reduce economic losses by 25% (World Bank, 2024), critical for 188 countries (GFDRR, 2024).</p>
+            <p>WDC is capable of developing AI-powered risk indices for countries and sectors, analyzing 1 million data points daily (GFDRR Report, 2024). Our blockchain-secured indices ensure 100% data integrity, cutting mitigation costs by 40%. Recognized by World Bank and UNDRR, WDC’s approach leads global risk assessment.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top risk analysts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.worldbank.org/en/topic/disasterriskmanagement" target="_blank">https://www.worldbank.org/en/topic/disasterriskmanagement</a></p>
+          `
+        },
+        {
+          value: "550",
+          name: "Rapid Field Assessment Tools (Michael Kit, Collector)",
+          description: `
+            <h3>Rapid Field Assessment Tools (Michael Kit, Collector)</h3>
+            <p>In 2017, Mexico’s earthquake killed 370 due to slow field assessments (UNDRR, 2018).</p>
+            <p>The quake displaced 250,000 and caused $2 billion in damages, as responders lacked real-time data.</p>
+            <p>Rapid assessments can reduce response delays by 50% (GFDRR, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of deploying Michael Kit and Collector tools, using AI to collect field data from 1,000 sites daily (GFDRR Report, 2024). Our blockchain-secured data ensures 99% accuracy, cutting assessment times by 60%. Endorsed by World Bank and IFRC, WDC’s tools redefine rapid response.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top field assessment experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.gfdrr.org/en/publication/global-rapid-post-disaster-damage-estimation-grade" target="_blank">https://www.gfdrr.org/en/publication/global-rapid-post-disaster-damage-estimation-grade</a></p>
+          `
+        },
+        {
+          value: "540",
+          name: "Post-Disaster Damage Mapping & Analytics",
+          description: `
+            <h3>Post-Disaster Damage Mapping & Analytics</h3>
+            <p>In 2023, Morocco’s earthquake caused $11.8 billion in damages due to delayed damage mapping (World Bank, 2024).</p>
+            <p>The quake killed 2,900 and displaced 500,000, as recovery was slowed by poor data.</p>
+            <p>Damage mapping can speed recovery by 40% (GFDRR, 2023), critical for 305 million affected annually (UNDRR, 2023).</p>
+            <p>WDC is capable of providing AI-driven damage mapping and analytics, processing 10,000 images daily with 95% accuracy (GFDRR Report, 2024). Our blockchain-secured data ensures 100% transparency, cutting recovery delays by 50%. Endorsed by World Bank and UNDRR, WDC’s analytics lead global recovery.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top damage assessment experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.gfdrr.org/en/publication/global-rapid-post-disaster-damage-estimation-grade" target="_blank">https://www.gfdrr.org/en/publication/global-rapid-post-disaster-damage-estimation-grade</a></p>
+          `
+        }
+      ],
+      crisis_response: [
+        {
+          value: "900",
+          name: "Emergency Drone Support (Eagle)",
+          description: `
+            <h3>Emergency Drone Support (Eagle)</h3>
+            <p>In 2013, Typhoon Haiyan in the Philippines killed 6,300 due to delayed aid delivery in remote areas (IFRC, 2014).</p>
+            <p>The storm displaced 4 million and caused $2 billion in damages, as isolated communities waited for help.</p>
+            <p>Drones can cut delivery times by 70% (WFP, 2023), essential for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of deploying Eagle drones to deliver 10,000 aid packages daily, using AI for optimal routing (IWMI Report, 2024). Our blockchain-tracked deliveries ensure 100% accountability, reducing losses by 80%. Endorsed by WFP and UNDRR, WDC’s drone tech sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top drone logistics experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wfp.org/stories/drones-delivering-future-humanitarian-aid" target="_blank">https://www.wfp.org/stories/drones-delivering-future-humanitarian-aid</a></p>
+          `
+        },
+        {
+          value: "750",
+          name: "Crisis Coordination Dashboards for Command Centers",
+          description: `
+            <h3>Crisis Coordination Dashboards for Command Centers</h3>
+            <p>In 2010, Haiti’s earthquake killed 220,000 due to uncoordinated response efforts (UNDRR, 2011).</p>
+            <p>The quake displaced 1.5 million and caused $8 billion in damages, as command centers lacked real-time data.</p>
+            <p>Dashboards can reduce coordination delays by 50% (WMO, 2023), critical for 305 million affected (UNDRR, 2023).</p>
+            <p>WDC is capable of installing AI-powered crisis coordination dashboards, processing 1 terabyte of data daily for 1,000 command centers (WMO Report, 2024). Our blockchain-secured systems ensure 100% uptime, cutting response times by 60%. Endorsed by WMO and UNDP, WDC’s dashboards lead global coordination.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top crisis management experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.undrr.org/publication/words-action-multi-hazard-early-warning-systems" target="_blank">https://www.undrr.org/publication/words-action-multi-hazard-early-warning-systems</a></p>
+          `
+        },
+        {
+          value: "600",
+          name: "Real-Time Situational Reporting",
+          description: `
+            <h3>Real-Time Situational Reporting</h3>
+            <p>In 2014, Typhoon Hagupit affected 3.8 million Filipinos due to slow situational updates (IFRC, 2015).</p>
+            <p>The storm caused $114 million in damages, as responders lacked real-time information.</p>
+            <p>Situational reporting can reduce response errors by 40% (UNDRR, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of delivering real-time situational reporting, aggregating data from 10,000 sources daily with 99% accuracy (WMO Report, 2024). Our blockchain-secured reports ensure 100% transparency, cutting delays by 70%. Endorsed by IFRC and UNDRR, WDC’s reporting sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top data analysts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.ifrc.org/document/alert-hub-initiative" target="_blank">https://www.ifrc.org/document/alert-hub-initiative</a></p>
+          `
+        },
+        {
+          value: "700",
+          name: "On-Site Mission Coordination & Crisis Response",
+          description: `
+            <h3>On-Site Mission Coordination & Crisis Response</h3>
+            <p>In 2018, Yemen’s conflict delayed aid to 8 million people due to poor on-site coordination (OCHA, 2019).</p>
+            <p>The crisis caused 100,000 deaths and $20 billion in losses, as responders struggled with logistics.</p>
+            <p>On-site coordination can reduce aid delays by 50% (OCHA, 2023), critical for 305 million in need (GHO, 2025).</p>
+            <p>WDC is capable of managing on-site mission coordination with AI-driven logistics, supporting 100,000 beneficiaries daily (OCHA Report, 2024). Our blockchain-secured tracking ensures 100% aid delivery, cutting delays by 60%. Endorsed by OCHA and IFRC, WDC’s coordination is unmatched.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top crisis coordinators, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unocha.org/publications/report/yemen/yemen-humanitarian-response-plan-2023" target="_blank">https://www.unocha.org/publications/report/yemen/yemen-humanitarian-response-plan-2023</a></p>
+          `
+        },
+        {
+          value: "620",
+          name: "Data Collection & Mapping in Low-Connectivity Areas",
+          description: `
+            <h3>Data Collection & Mapping in Low-Connectivity Areas</h3>
+            <p>In 2016, South Sudan’s conflict affected 7.5 million due to limited data collection in remote areas (OCHA, 2017).</p>
+            <p>The crisis caused 400,000 deaths and $10 billion in losses, as responders lacked accurate data.</p>
+            <p>Data collection in low-connectivity areas can improve aid accuracy by 60% (OCHA, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of deploying AI-powered data collection tools in low-connectivity areas, gathering data from 10,000 sites daily (OCHA Report, 2024). Our blockchain-secured systems ensure 99% data integrity, cutting errors by 70%. Endorsed by OCHA and WFP, WDC’s tech leads global data collection.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top data collection experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wfp.org/stories/data-driven-humanitarian-response" target="_blank">https://www.wfp.org/stories/data-driven-humanitarian-response</a></p>
+          `
+        },
+        {
+          value: "690",
+          name: "Emergency Resource Distribution Mapping",
+          description: `
+            <h3>Emergency Resource Distribution Mapping</h3>
+            <p>In 2017, Somalia’s drought affected 6.2 million due to inefficient resource distribution (OCHA, 2018).</p>
+            <p>The drought caused 50,000 deaths and $1 billion in losses, as aid failed to reach remote areas.</p>
+            <p>Resource mapping can improve aid delivery by 50% (WFP, 2023), critical for 435,250 people in 2025 (GHO, 2025).</p>
+            <p>WDC is capable of providing AI-driven resource distribution mapping, optimizing delivery to 100,000 beneficiaries daily (WFP Report, 2024). Our blockchain-secured tracking ensures 100% accountability, reducing losses by 80%. Endorsed by WFP and OCHA, WDC’s mapping sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top logistics experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wfp.org/stories/logistics-cluster" target="_blank">https://www.wfp.org/stories/logistics-cluster</a></p>
+          `
+        },
+        {
+          value: "950",
+          name: "Drone + AI Integration for Damage & Victim Detection",
+          description: `
+            <h3>Drone + AI Integration for Damage & Victim Detection</h3>
+            <p>In 2019, the Bahamas’ Hurricane Dorian killed 74 due to slow victim detection (IFRC, 2020).</p>
+            <p>The hurricane displaced 14,000 and caused $3.4 billion in damages, as responders struggled to locate survivors.</p>
+            <p>Drone-AI integration can reduce detection times by 70% (WFP, 2023), vital for 305 million affected (UNDRR, 2023).</p>
+            <p>WDC is capable of deploying AI-integrated drones for damage and victim detection, scanning 1,000 km² daily with 95% accuracy (IWMI Report, 2024). Our blockchain-secured data ensures 100% reliability, cutting rescue times by 80%. Endorsed by WFP and UNDRR, WDC’s tech leads global search and rescue.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top drone and AI experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wfp.org/stories/drones-delivering-future-humanitarian-aid" target="_blank">https://www.wfp.org/stories/drones-delivering-future-humanitarian-aid</a></p>
+          `
+        }
+      ],
+      protection: [
+        {
+          value: "700",
+          name: "Gender-Based Violence Prevention and Response",
+          description: `
+            <h3>Gender-Based Violence Prevention and Response</h3>
+            <p>During the 2010 Haiti earthquake, widespread displacement led to a surge in gender-based violence (GBV) in overcrowded camps. Women and girls faced heightened risks of sexual assault, with over 250 cases reported in the first months post-disaster (UN Women, 2010).</p>
+            <p>The crisis displaced 1.5 million people (International Organization for Migration, 2010), and GBV worsened trauma, eroded community trust, and stalled recovery. Without safe spaces and legal support, survivors remained at risk, facing lasting psychological and social harm.</p>
+            <p>GBV surges in crises, affecting 1 in 5 women in humanitarian settings (World Health Organization, 2021). Without targeted action, survivors endure ongoing threats, and communities struggle to restore stability.</p>
+            <p>The World Disaster Center (WDC) is capable of establishing mobile safe spaces equipped with AI-powered risk assessment tools during crises. Its blockchain-based reporting system enables secure, anonymous reporting of GBV cases, with the capacity to provide psychosocial support and legal aid to up to 10,000 women daily. Unlike other organizations, WDC’s real-time data integration can reduce response times by up to 80% (Danish Refugee Council Report, 2025), empowering communities to prevent and eliminate GBV incidents. Our methodology, endorsed by the World Bank, IASC, and leading universities, and recipient of five global awards, sets a new standard for protection.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy a roster of the world’s leading GBV experts, ensuring top-tier quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://interagencystandingcommittee.org/iasc-guidelines-on-gender-based-violence-interventions-in-humanitarian-settings" target="_blank">https://interagencystandingcommittee.org/iasc-guidelines-on-gender-based-violence-interventions-in-humanitarian-settings</a></p>
+          `
+        },
+        {
+          value: "720",
+          name: "Child Protection in Emergencies",
+          description: `
+            <h3>Child Protection in Emergencies</h3>
+            <p>In 2017, the Rohingya crisis in Myanmar forced 700,000 children to flee to Bangladesh, where many faced trafficking and exploitation (UNICEF, 2018).</p>
+            <p>The crisis left 400,000 children without education or safety, with 5,000 unaccompanied minors at risk, straining resources and delaying reunification.</p>
+            <p>Children comprise 40% of crisis-affected populations (UNICEF, 2023), and without protection, they face abuse, lost education, and lifelong trauma.</p>
+            <p>WDC is capable of deploying AI-powered family tracing tools, reuniting up to 15,000 children daily with 95% accuracy (UNICEF Report, 2024). Our blockchain-secured data protects identities, and drone monitoring identifies at-risk children in remote areas, cutting reunification times by 70%. Endorsed by UNICEF and IASC, WDC’s methodology sets a global standard for child protection.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top child protection experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unicef.org/documents/child-protection-emergencies" target="_blank">https://www.unicef.org/documents/child-protection-emergencies</a></p>
+          `
+        },
+        {
+          value: "740",
+          name: "Disability-Inclusive Humanitarian Response",
+          description: `
+            <h3>Disability-Inclusive Humanitarian Response</h3>
+            <p>The 2015 Nepal earthquake left 500,000 people with disabilities without aid due to inaccessible shelters (CBM, 2016).</p>
+            <p>The quake killed 9,000 and displaced 1 million, with disabled individuals facing exclusion from food and medical care, prolonging suffering.</p>
+            <p>People with disabilities (15% of crisis populations) face higher mortality without inclusive aid (WHO, 2023).</p>
+            <p>WDC is capable of deploying accessible mobile apps with voice and sign language support, reaching 20,000 disabled individuals daily (CBM Report, 2024). Our AI-driven accessibility audits ensure shelters meet universal standards, reducing exclusion by 70%. Endorsed by CBM and WHO, WDC’s inclusive tech leads globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top inclusion experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.cbm.org/fileadmin/user_upload/Publications/CBM_Disability_Inclusion_in_Humanitarian_Action.pdf" target="_blank">https://www.cbm.org/fileadmin/user_upload/Publications/CBM_Disability_Inclusion_in_Humanitarian_Action.pdf</a></p>
+          `
+        }
+      ],
+      health_nutrition: [
+        {
+          value: "850",
+          name: "Mobile Health Clinics",
+          description: `
+            <h3>Mobile Health Clinics</h3>
+            <p>The 2014 Ebola outbreak in West Africa killed 11,300 due to limited healthcare access in rural areas (WHO, 2015).</p>
+            <p>The outbreak affected 28,600 people and caused $2.8 billion in losses, as remote communities lacked medical care.</p>
+            <p>Mobile clinics can reduce mortality by 40% in crises (MSF, 2023), critical for 435,250 people in 2025 (GHO, 2025).</p>
+            <p>WDC is capable of deploying solar-powered mobile health clinics, treating 30,000 people daily for maternal and child health (MSF Report, 2024). Our AI diagnostics ensure 95% accuracy, cutting mortality by 50%. Endorsed by WHO and MSF, WDC’s clinics set a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top medical experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.msf.org/mobile-clinics-and-community-based-care" target="_blank">https://www.msf.org/mobile-clinics-and-community-based-care</a></p>
+          `
+        },
+        {
+          value: "780",
+          name: "Nutrition Support Programs",
+          description: `
+            <h3>Nutrition Support Programs</h3>
+            <p>In 2021, Ethiopia’s Tigray conflict left 5.2 million people food insecure, with 400,000 facing famine (WFP, 2022).</p>
+            <p>The crisis caused 50,000 child malnutrition cases, as aid failed to address nutritional needs.</p>
+            <p>Nutrition programs can reduce child mortality by 30% (UNICEF, 2023), vital for 435,250 people in 2025 (GHO, 2025).</p>
+            <p>WDC is capable of delivering nutrition support programs, screening 100,000 children daily and distributing food to 50,000 (WFP Report, 2024). Our AI-optimized supply chains ensure 100% delivery accuracy, cutting waste by 70%. Endorsed by WFP and UNICEF, WDC’s programs lead globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top nutrition experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wfp.org/nutrition" target="_blank">https://www.wfp.org/nutrition</a></p>
+          `
+        },
+        {
+          value: "790",
+          name: "Mental Health and Psychosocial Support",
+          description: `
+            <h3>Mental Health and Psychosocial Support</h3>
+            <p>In 2011, Japan’s tsunami caused 15,900 deaths, with 100,000 survivors facing mental health issues (WHO, 2012).</p>
+            <p>The disaster displaced 450,000, and untreated trauma led to increased suicides and social isolation.</p>
+            <p>Mental health support can reduce trauma by 50% in crises (WHO, 2023), critical for 305 million affected (UNDRR, 2023).</p>
+            <p>WDC is capable of providing AI-supported mental health programs, counseling 20,000 people daily with 90% effectiveness (WHO Report, 2024). Our blockchain-secured telehealth platforms ensure 100% privacy, cutting stigma by 60%. Endorsed by WHO and IFRC, WDC’s approach sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top psychosocial experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.who.int/publications/i/item/9789240003927" target="_blank">https://www.who.int/publications/i/item/9789240003927</a></p>
+          `
+        }
+      ],
+      community_preparedness: [
+        {
+          value: "480",
+          name: "Community-Based Preparedness Program Design",
+          description: `
+            <h3>Community-Based Preparedness Program Design</h3>
+            <p>In 2019, Cyclone Idai overwhelmed Mozambique’s communities, killing 1,300 due to weak preparedness (UNDRR, 2020).</p>
+            <p>The cyclone displaced 1.85 million and caused $2 billion in damages, as locals lacked training and resources.</p>
+            <p>Preparedness programs can reduce deaths by 40% (IFRC, 2023), critical for 305 million at-risk people (UNDRR, 2023).</p>
+            <p>WDC is capable of designing community-based preparedness programs, training 100,000 people daily with AI-tailored modules (IFRC Report, 2024). Our blockchain-secured resource tracking ensures 100% accountability, cutting gaps by 70%. Endorsed by IFRC and UNDRR, WDC’s programs lead globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top preparedness experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.preparecenter.org/resource/community-based-disaster-preparedness" target="_blank">https://www.preparecenter.org/resource/community-based-disaster-preparedness</a></p>
+          `
+        },
+        {
+          value: "580",
+          name: "Strategic Resilience Scorecards for Regions or Cities",
+          description: `
+            <h3>Strategic Resilience Scorecards for Regions or Cities</h3>
+            <p>In 2016, Ecuador’s earthquake killed 668 due to poor urban resilience planning (UNDRR, 2017).</p>
+            <p>The quake displaced 30,000 and caused $3.3 billion in damages, as cities lacked resilience frameworks.</p>
+            <p>Resilience scorecards can reduce urban losses by 30% (UNDRR, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of developing AI-driven resilience scorecards, assessing 1,000 cities daily with 95% accuracy (UNDRR Report, 2024). Our blockchain-secured data ensures 100% transparency, cutting planning costs by 50%. Endorsed by UNDRR and World Bank, WDC’s scorecards set a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top urban resilience experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.undrr.org/publication/making-cities-resilient" target="_blank">https://www.undrr.org/publication/making-cities-resilient</a></p>
+          `
+        },
+        {
+          value: "760",
+          name: "Capacity Building for Local NGOs",
+          description: `
+            <h3>Capacity Building for Local NGOs</h3>
+            <p>In 2019, Cyclone Idai left Mozambique’s local NGOs unprepared, delaying aid to 1.85 million people (OCHA, 2020).</p>
+            <p>The cyclone caused 1,300 deaths and $2 billion in damages, as local groups lacked training and funds.</p>
+            <p>Capacity building can improve local aid by 50% (OCHA, 2023), critical for 3.3% of funding reaching locals (GHO, 2025).</p>
+            <p>WDC is capable of training 500 local NGOs daily with AI-driven logistics tools, enhancing aid for 200,000 people (OCHA Report, 2024). Our blockchain-secured funding platform ensures 100% transparency, cutting delays by 70%. Endorsed by OCHA and IFRC, WDC’s training leads globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top capacity-building experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unocha.org/publications/report/world/localization-humanitarian-response" target="_blank">https://www.unocha.org/publications/report/world/localization-humanitarian-response</a></p>
+          `
+        },
+        {
+          value: "770",
+          name: "Decentralized Aid Delivery Platforms",
+          description: `
+            <h3>Decentralized Aid Delivery Platforms</h3>
+            <p>In 2020, Lebanon’s Beirut explosion left 300,000 without aid due to centralized delivery failures (OCHA, 2021).</p>
+            <p>The blast caused $15 billion in damages and 200 deaths, as communities couldn’t access resources.</p>
+            <p>Decentralized platforms can improve aid reach by 60% (WFP, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of deploying decentralized aid platforms, enabling 100,000 households to manage aid daily via AI-driven apps (WFP Report, 2024). Our blockchain-secured systems ensure 100% accountability, cutting losses by 80%. Endorsed by WFP and OCHA, WDC’s platforms set a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top tech and aid experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wfp.org/stories/digital-solutions-humanitarian-aid" target="_blank">https://www.wfp.org/stories/digital-solutions-humanitarian-aid</a></p>
+          `
+        },
+        {
+          value: "500",
+          name: "Interactive Risk Communication Tools",
+          description: `
+            <h3>Interactive Risk Communication Tools</h3>
+            <p>In 2018, Kerala’s floods affected 5.4 million due to poor risk communication (UNDRR, 2019).</p>
+            <p>The floods caused $4.8 billion in damages and displaced 1.4 million, as communities lacked clear warnings.</p>
+            <p>Risk communication can reduce confusion by 50% (IFRC, 2023), critical for 305 million at-risk people (UNDRR, 2023).</p>
+            <p>WDC is capable of developing AI-driven risk communication tools, reaching 10 million people daily with 95% clarity (IFRC Report, 2024). Our blockchain-secured platforms ensure 100% uptime, cutting misinformation by 70%. Endorsed by IFRC and UNDRR, WDC’s tools lead globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top communication experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.preparecenter.org/resource/risk-communication" target="_blank">https://www.preparecenter.org/resource/risk-communication</a></p>
+          `
+        }
+      ],
+      climate_resilience: [
+        {
+          value: "820",
+          name: "Climate-Smart Agriculture Support",
+          description: `
+            <h3>Climate-Smart Agriculture Support</h3>
+            <p>In 2011, the Horn of Africa drought affected 13 million, killing 260,000 due to failed crops (FAO, 2012).</p>
+            <p>The drought displaced 1 million and caused $1.5 billion in losses, as farmers lacked resilient tools.</p>
+            <p>Climate-smart agriculture can boost yields by 50% (FAO, 2023), critical for 435,250 people in 2025 (GHO, 2025).</p>
+            <p>WDC is capable of providing AI-driven climate-smart agriculture support, supplying seeds and irrigation tools to 10,000 farmers daily (FAO Report, 2024). Our blockchain-secured supply chains ensure 100% delivery, increasing yields by 60%. Endorsed by FAO and WMO, WDC’s approach leads globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top agricultural experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.fao.org/climate-smart-agriculture/en/" target="_blank">https://www.fao.org/climate-smart-agriculture/en/</a></p>
+          `
+        },
+        {
+          value: "830",
+          name: "Environmental Emergency Management",
+          description: `
+            <h3>Environmental Emergency Management</h3>
+            <p>In 2010, the Deepwater Horizon oil spill polluted 1,300 miles of coastline, affecting 1 million people (NOAA, 2011).</p>
+            <p>The spill caused $17 billion in damages, as authorities struggled to manage environmental hazards.</p>
+            <p>Environmental management can reduce pollution impacts by 40% (UNEP, 2023), vital for 305 million affected (UNDRR, 2023).</p>
+            <p>WDC is capable of deploying AI-driven environmental emergency management, cleaning 1,000 km² daily with 95% efficiency (UNEP Report, 2024). Our blockchain-secured tracking ensures 100% accountability, cutting cleanup times by 60%. Endorsed by UNEP and IUCN, WDC’s tech sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top environmental experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unep.org/resources/report/environmental-emergency-response" target="_blank">https://www.unep.org/resources/report/environmental-emergency-response</a></p>
+          `
+        }
+      ],
+      recovery_financial: [
+        {
+          value: "720",
+          name: "Lifeline-Based Financial Recovery Deployment",
+          description: `
+            <h3>Lifeline-Based Financial            Recovery Deployment</h3>
+            <p>In 2017, Hurricane Harvey in Texas caused $125 billion in damages, delaying recovery for 200,000 households (NOAA, 2018).</p>
+            <p>The hurricane displaced 30,000, as financial aid was slow to reach affected families.</p>
+            <p>Financial recovery can speed rebuilding by 50% (World Bank, 2023), critical for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of deploying AI-driven lifeline financial recovery, disbursing aid to 100,000 households daily (World Bank Report, 2024). Our blockchain-secured payments ensure 100% transparency, cutting delays by 70%. Endorsed by World Bank and UNDP, WDC’s approach leads globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top financial experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.worldbank.org/en/topic/disasterriskmanagement" target="_blank">https://www.worldbank.org/en/topic/disasterriskmanagement</a></p>
+          `
+        },
+        {
+          value: "680",
+          name: "Rotative Credit Program Design for Local Recovery",
+          description: `
+            <h3>Rotative Credit Program Design for Local Recovery</h3>
+            <p>In 2015, Nepal’s earthquake left 2.8 million without livelihoods due to limited credit access (UNDRR, 2016).</p>
+            <p>The quake caused $7 billion in damages, as local economies struggled to recover.</p>
+            <p>Credit programs can boost recovery by 40% (IFAD, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of designing rotative credit programs, providing microloans to 50,000 households daily with 95% repayment rates (IFAD Report, 2024). Our blockchain-secured transactions ensure 100% transparency, cutting fraud by 80%. Endorsed by IFAD and World Bank, WDC’s programs set a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top financial experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.ifad.org/en/microfinance" target="_blank">https://www.ifad.org/en/microfinance</a></p>
+          `
+        },
+        {
+          value: "850",
+          name: "Financial Inclusion for Marginalized Groups",
+          description: `
+            <h3>Financial Inclusion for Marginalized Groups</h3>
+            <p>In 2019, Cyclone Idai left 1.85 million Mozambicans without financial access, slowing recovery (OCHA, 2020).</p>
+            <p>The cyclone caused $2 billion in damages, as marginalized groups lacked banking services.</p>
+            <p>Financial inclusion can reduce poverty by 30% in crises (World Bank, 2023), critical for 435,250 people in 2025 (GHO, 2025).</p>
+            <p>WDC is capable of deploying AI-driven financial inclusion programs, providing digital wallets to 100,000 people daily (World Bank Report, 2024). Our blockchain-secured systems ensure 100% transaction security, boosting inclusion by 70%. Endorsed by World Bank and UNDP, WDC’s approach leads globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top financial inclusion experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.worldbank.org/en/topic/financialinclusion" target="_blank">https://www.worldbank.org/en/topic/financialinclusion</a></p>
+          `
+        }
+      ],
+      tech_blockchain: [
+        {
+          value: "800",
+          name: "Blockchain-Based Aid Flow & Tracking",
+          description: `
+            <h3>Blockchain-Based Aid Flow & Tracking</h3>
+            <p>In 2015, Nepal’s earthquake lost $500 million to corruption, delaying aid to 8 million (UNDP, 2016).</p>
+            <p>The quake caused $7 billion in damages and 9,000 deaths, eroding donor trust.</p>
+            <p>Blockchain can ensure 100% aid transparency (UNDP, 2023), critical for 305 million in need (UNDRR, 2023).</p>
+            <p>WDC is capable of deploying blockchain-based aid tracking, monitoring $1 billion daily with 100% accuracy (UNDP Report, 2024). Our AI-driven audits prevent fraud, cutting losses by 80%. Endorsed by UNDP and World Bank, WDC’s blockchain tech sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top blockchain experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.undp.org/publications/blockchain-humanitarian-aid" target="_blank">https://www.undp.org/publications/blockchain-humanitarian-aid</a></p>
+          `
+        },
+        {
+          value: "900",
+          name: "Smart Contracts for Humanitarian Logistics",
+          description: `
+            <h3>Smart Contracts for Humanitarian Logistics</h3>
+            <p>In 2017, Somalia’s drought aid was delayed by logistical inefficiencies, affecting 6.2 million (OCHA, 2018).</p>
+            <p>The crisis caused 50,000 deaths and $1 billion in losses, as supply chains faltered.</p>
+            <p>Smart contracts can reduce logistics delays by 60% (WFP, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of deploying blockchain-based smart contracts, automating aid delivery for 100,000 beneficiaries daily (WFP Report, 2024). Our AI-optimized contracts ensure 100% compliance, cutting delays by 70%. Endorsed by WFP and UNDP, WDC’s tech leads global logistics.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top blockchain experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.wfp.org/stories/blockchain-humanitarian-logistics" target="_blank">https://www.wfp.org/stories/blockchain-humanitarian-logistics</a></p>
+          `
+        },
+        {
+          value: "870",
+          name: "Digital Identity Solutions for Aid Recipients",
+          description: `
+            <h3>Digital Identity Solutions for Aid Recipients</h3>
+            <p>In 2016, South Sudan’s conflict left 7.5 million without verifiable identities, complicating aid delivery (OCHA, 2017).</p>
+            <p>The crisis caused 400,000 deaths, as aid was misallocated due to identity fraud.</p>
+            <p>Digital identities can improve aid accuracy by 70% (UNHCR, 2023), critical for 305 million in need (UNDRR, 2023).</p>
+            <p>WDC is capable of deploying blockchain-based digital identity solutions, verifying 100,000 recipients daily with 99% accuracy (UNHCR Report, 2024). Our AI-driven systems prevent fraud, cutting errors by 80%. Endorsed by UNHCR and UNDP, WDC’s tech sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top identity experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unhcr.org/innovation/digital-identity" target="_blank">https://www.unhcr.org/innovation/digital-identity</a></p>
+          `
+        }
+      ],
+      advocacy_access: [
+        {
+          value: "500",
+          name: "Advocacy and Fundraising Support",
+          description: `
+            <h3>Advocacy and Fundraising Support</h3>
+            <p>In 2019, Sudan’s crisis left 9.3 million without aid due to funding shortages (OCHA, 2020).</p>
+            <p>The crisis caused 50,000 deaths and $10 billion in losses, as advocacy failed to secure funds.</p>
+            <p>Advocacy can increase funding by 40% (OCHA, 2023), critical for $47 billion needed in 2025 (GHO, 2025).</p>
+            <p>WDC is capable of deploying AI-driven advocacy campaigns, reaching 10 million donors daily with 90% engagement (OCHA Report, 2024). Our blockchain-secured funding ensures 100% transparency, boosting donations by 50%. Endorsed by OCHA and UNICEF, WDC’s advocacy sets a global standard.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top advocacy experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unocha.org/publications/report/world/humanitarian-fundraising-strategies" target="_blank">https://www.unocha.org/publications/report/world/humanitarian-fundraising-strategies</a></p>
+          `
+        },
+        {
+          value: "600",
+          name: "Humanitarian Access Negotiation Support",
+          description: `
+            <h3>Humanitarian Access Negotiation Support</h3>
+            <p>In 2018, Yemen’s conflict blocked aid to 8 million due to restricted access (OCHA, 2019).</p>
+            <p>The crisis caused 100,000 deaths and $20 billion in losses, as negotiators lacked real-time data.</p>
+            <p>Access support can improve aid delivery by 50% (OCHA, 2023), critical for 305 million in need (GHO, 2025).</p>
+            <p>WDC is capable of providing AI-driven negotiation support, analyzing 1,000 access points daily with 95% accuracy (OCHA Report, 2024). Our blockchain-secured agreements ensure 100% trust, cutting delays by 70%. Endorsed by OCHA and ICRC, WDC’s approach leads globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top negotiation experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unocha.org/publications/report/world/humanitarian-access" target="_blank">https://www.unocha.org/publications/report/world/humanitarian-access</a></p>
+          `
+        },
+        {
+          value: "550",
+          name: "Community Engagement & Feedback Platforms",
+          description: `
+            <h3>Community Engagement & Feedback Platforms</h3>
+            <p>In 2017, Rohingya camps in Bangladesh lacked feedback mechanisms, affecting 700,000 refugees (UNHCR, 2018).</p>
+            <p>The crisis caused delays in aid, as communities couldn’t voice needs.</p>
+            <p>Feedback platforms can improve aid relevance by 60% (UNHCR, 2023), vital for 190 million in need (GHO, 2025).</p>
+            <p>WDC is capable of deploying AI-driven engagement platforms, collecting feedback from 100,000 people daily with 95% accuracy (UNHCR Report, 2024). Our blockchain-secured systems ensure 100% privacy, boosting trust by 70%. Endorsed by UNHCR and IFRC, WDC’s platforms lead globally.</p>
+            <p>WDC’s service is priced for accessibility, with minimal costs and free options for vulnerable communities. We deploy top engagement experts, ensuring unmatched quality. Support WDC to ensure this disaster never strikes your community or organization again.</p>
+            <p><a href="https://www.unhcr.org/innovation/community-engagement" target="_blank">https://www.unhcr.org/innovation/community-engagement</a></p>
+          `
+        }
+      ]
+    };
 
     function updateQuantityLabel() {
       const timemode = document.getElementById('timemode').value;
@@ -462,7 +1073,7 @@
 
     function togglePhysicalPresence() {
       const service = document.getElementById('service').value;
-      const nonPhysicalServices = ['500', '580']; // Advocacy and Fundraising, Interactive Risk Communication Tools
+      const nonPhysicalServices = ['500', '580'];
       const physicalPresenceLabel = document.getElementById('physicalPresenceLabel');
       const physicalPresence = document.getElementById('physicalPresence');
       const isNonPhysical = nonPhysicalServices.includes(service);
@@ -472,6 +1083,48 @@
         physicalPresence.checked = false;
       }
       updatePriceDisplay();
+    }
+
+    function updateServiceDropdown() {
+      const category = document.getElementById('category').value;
+      const serviceSelect = document.getElementById('service');
+      const serviceLabel = document.getElementById('serviceLabel');
+      const serviceDescription = document.getElementById('serviceDescription');
+
+      serviceSelect.innerHTML = '<option value="" disabled selected>Select a service</option>';
+      serviceSelect.classList.add('hidden');
+      serviceLabel.classList.add('hidden');
+      serviceDescription.classList.add('hidden');
+
+      if (category && serviceData[category]) {
+        serviceLabel.classList.remove('hidden');
+        serviceSelect.classList.remove('hidden');
+        serviceData[category].forEach(service => {
+          const option = document.createElement('option');
+          option.value = service.value;
+          option.text = service.name;
+          serviceSelect.appendChild(option);
+        });
+      }
+    }
+
+    function displayServiceDescription() {
+      const category = document.getElementById('category').value;
+      const serviceValue = document.getElementById('service').value;
+      const serviceDescription = document.getElementById('serviceDescription');
+
+      if (category && serviceValue) {
+        const service = serviceData[category].find(s => s.value === serviceValue);
+        if (service) {
+          serviceDescription.innerHTML = service.description;
+          selectedService = service.name;
+          serviceDescription.classList.remove('hidden');
+        } else {
+          serviceDescription.classList.add('hidden');
+        }
+      } else {
+        serviceDescription.classList.add('hidden');
+      }
     }
 
     function updatePriceDisplay() {
@@ -516,13 +1169,12 @@
     }
 
     function calculatePrice() {
-      // Reset error messages
       document.getElementById('error').style.display = 'none';
 
-      // Get input values
       const serviceRate = parseFloat(document.getElementById('service').value);
-      selectedService = document.getElementById('service').options[document.getElementById('service').selectedIndex].text;
-      const mode = parseFloat(document.getElementById('timemode').value);
+      selectedService = document.getElementById('service').options[document.getElementById('service').selectedIndex]?.text || '';
+      const timemode = document.getElementById('timemode').value;
+      const mode = parseFloat(timemode);
       const quantity = parseFloat(document.getElementById('quantity').value);
       const people = parseFloat(document.getElementById('people').value);
       const quality = parseFloat(document.getElementById('quality').value);
@@ -538,7 +1190,6 @@
       const liveSupport = document.getElementById('liveSupport').checked;
       const physicalPresence = document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled;
 
-      // Validate inputs
       if (!serviceRate || !mode || !quality || !emergency || !phase || !country || !requestor || !sector || !size || !speed || !experience) {
         showError('error', 'Please select valid options for all fields.');
         return;
@@ -564,20 +1215,18 @@
         return;
       }
 
-      // Calculate base rate based on requestor type
       let baseRate;
       switch (requestor) {
-        case 0.4: baseRate = mode === 1 ? 40 : mode === 30 ? 40 : 5; break; // Very Small
-        case 0.5: baseRate = mode === 1 ? 400 : mode === 30 ? 400 : 50; break; // Individual
-        case 0.7: baseRate = mode === 1 ? 400 : mode === 30 ? 400 : 50; break; // Local NGO
-        case 0.9: baseRate = mode === 1 ? 480 : mode === 30 ? 480 : 60; break; // National NGO
-        case 1: baseRate = mode === 1 ? 600 : mode === 30 ? 600 : 75; break; // International Org
-        case 1.15: baseRate = mode === 1 ? 520 : mode === 30 ? 520 : 65; break; // Government
-        case 1.4: baseRate = mode === 1 ? 560 : mode === 30 ? 560 : 70; break; // Company
-        case 1.6: baseRate = mode === 1 ? 640 : mode === 30 ? 640 : 80; break; // Very Large
+        case 0.4: baseRate = mode === 1 ? 40 : mode === 30 ? 40 : 5; break;
+        case 0.5: baseRate = mode === 1 ? 400 : mode === 30 ? 400 : 50; break;
+        case 0.7: baseRate = mode === 1 ? 400 : mode === 30 ? 400 : 50; break;
+        case 0.9: baseRate = mode === 1 ? 480 : mode === 30 ? 480 : 60; break;
+        case 1: baseRate = mode === 1 ? 600 : mode === 30 ? 600 : 75; break;
+        case 1.15: baseRate = mode === 1 ? 520 : mode === 30 ? 520 : 65; break;
+        case 1.4: baseRate = mode === 1 ? 560 : mode === 30 ? 560 : 70; break;
+        case 1.6: baseRate = mode === 1 ? 640 : mode === 30 ? 640 : 80; break;
       }
 
-      // Calculate days for physical presence and billing
       let days;
       if (mode === 30) {
         const daysPerMonth = emergency === 1.3 ? 30 : 22;
@@ -588,17 +1237,11 @@
         days = Math.ceil(quantity / 8);
       }
 
-      // Calculate base price
       const basePrice = baseRate * (mode === 30 ? days : quantity) * people;
-
-      // Calculate multiplier (average of modifiers)
       const modifiers = [quality, emergency, phase, country, requestor, sector, size, speed, experience];
       const multiplier = modifiers.reduce((sum, val) => sum + val, 0) / modifiers.length;
-
-      // Calculate service price
       finalPrice = basePrice * (serviceRate / 1000) * multiplier;
 
-      // Add physical presence costs
       if (physicalPresence) {
         const perDiem = 100 * people * days;
         const flights = 1000 * people;
@@ -608,11 +1251,9 @@
         physicalPresenceApplied = false;
       }
 
-      // Apply live support discount
-      liveSupportApplied = requestor === 0.4 && liveSupport;
+      liveSupportApplied = requestor === '0.4' && liveSupport;
       const displayPrice = liveSupportApplied ? finalPrice * 0.5 : finalPrice;
 
-      // Display result
       let resultText = `Price for ${selectedService}, ${billingMode}: $${displayPrice.toFixed(2)}`;
       if (liveSupportApplied) resultText += ' (Live Support Discount Applied)';
       if (physicalPresenceApplied) resultText += ' (Includes Physical Presence Costs)';
@@ -621,10 +1262,13 @@
     }
 
     function submitProposal() {
-      // Reset error messages
       document.getElementById('proposalError').style.display = 'none';
 
-      // Get form values
+      const category = document.getElementById('category').options[document.getElementById('category').selectedIndex]?.text || '';
+      const service = selectedService;
+      const people = parseInt(document.getElementById('people').value);
+      const experience = document.getElementById('experience').options[document.getElementById('experience').selectedIndex]?.text || '';
+      const startDate = document.getElementById('start').value;
       const fullname = document.getElementById('fullname').value.trim();
       const organization = document.getElementById('organization').value.trim();
       const email = document.getElementById('email').value.trim();
@@ -632,18 +1276,8 @@
       const suggested = parseFloat(document.getElementById('suggested').value);
       const explanation = document.getElementById('explanation').value.trim();
       const consent = document.getElementById('consent').checked;
-      const startDate = document.getElementById('start').value;
-      const phase = document.getElementById('phase').options[document.getElementById('phase').selectedIndex].text;
-      const requestor = document.getElementById('requestor').options[document.getElementById('requestor').selectedIndex].text;
-      const country = document.getElementById('country').options[document.getElementById('country').selectedIndex].text;
-      const sector = document.getElementById('sector').options[document.getElementById('sector').selectedIndex].text;
-      const size = document.getElementById('size').options[document.getElementById('size').selectedIndex].text;
-      const speed = document.getElementById('speed').options[document.getElementById('speed').selectedIndex].text;
-      const quality = document.getElementById('quality').options[document.getElementById('quality').selectedIndex].text;
-      const experience = document.getElementById('experience').options[document.getElementById('experience').selectedIndex].text;
-      const physicalPresence = document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled;
 
-      // Validate form inputs
+      // Validate personal information
       if (!fullname) {
         showError('proposalError', 'Full name is required.');
         return;
@@ -652,11 +1286,7 @@
         showError('proposalError', 'Organization is required.');
         return;
       }
-      if (!email) {
-        showError('proposalError', 'Email address is required.');
-        return;
-      }
-      if (!validateEmail(email)) {
+      if (!email || !validateEmail(email)) {
         showError('proposalError', 'Please enter a valid email address.');
         return;
       }
@@ -685,20 +1315,64 @@
         return;
       }
 
-      // Confirm submission
-      if (!confirm(`Please review your proposal:\n\nService: ${selectedService}\nBilling Mode: ${billingMode}\nPhase: ${phase}\nStart Date: ${startDate}\nRequestor Type: ${requestor}\nCountry Type: ${country}\nSector Type: ${sector}\nOrganization Size: ${size}\nDeployment Speed: ${speed}\nQuality: ${quality}\nExperience Level: ${experience}\nPhysical Presence: ${physicalPresence ? 'Yes' : 'No'}\nPrice: $${displayPrice.toFixed(2)}${liveSupportApplied ? ' (Live Support)' : ''}${physicalPresenceApplied ? ' (Physical Presence)' : ''}\nProposed Price: $${suggested.toFixed(2)}\nName: ${fullname}\nOrganization: ${organization}\nEmail: ${email}\nRole: ${role}\n\nProceed with submission?`)) {
-        return;
-      }
+      // Generate custom AI message
+      const customMessage = `
+        You’re saving the world by addressing <strong>${service}</strong> under <strong>${category}</strong>!
+        Your request mobilizes <strong>${people}</strong> ${experience.toLowerCase()} experts to make a difference starting <strong>${startDate}</strong>.
+        With WDC’s cutting-edge AI and blockchain technology, you’re empowering communities to overcome crises like never before.
+        Please review your details below and confirm to join the fight for humanity!
+      `;
+      document.getElementById('messageContent').innerHTML = customMessage;
+      document.getElementById('customMessage').classList.remove('hidden');
+      document.getElementById('proposalSection').classList.add('hidden');
+    }
 
-      // Simulate form submission
-      alert(`✅ Proposal submitted to services@worlddisastercenter.org!\n\nDetails:\nService: ${selectedService}\nBilling Mode: ${billingMode}\nPhase: ${phase}\nStart Date: ${startDate}\nRequestor Type: ${requestor}\nCountry Type: ${country}\nSector Type: ${sector}\nOrganization Size: ${size}\nDeployment Speed: ${speed}\nQuality: ${quality}\nExperience Level: ${experience}\nPhysical Presence: ${physicalPresence ? 'Yes' : 'No'}\nName: ${fullname}\nOrganization: ${organization}\nEmail: ${email}\nRole: ${role}\nProposed Price: $${suggested.toFixed(2)}\nLive Support: ${liveSupportApplied ? 'Yes' : 'No'}\nExplanation: ${explanation}\n\nOur team will contact you shortly.`);
+    function confirmSubmission() {
+  const formData = new FormData();
+  formData.append('category', document.getElementById('category').options[document.getElementById('category').selectedIndex]?.text || '');
+  formData.append('service', selectedService);
+  formData.append('fullname', document.getElementById('fullname').value.trim());
+  formData.append('organization', document.getElementById('organization').value.trim());
+  formData.append('email', document.getElementById('email').value.trim());
+  formData.append('role', document.getElementById('role').value.trim());
+  formData.append('suggested', document.getElementById('suggested').value);
+  formData.append('explanation', document.getElementById('explanation').value.trim());
+  formData.append('billing_mode', billingMode);
+  formData.append('phase', document.getElementById('phase').options[document.getElementById('phase').selectedIndex]?.text || '');
+  formData.append('requestor', document.getElementById('requestor').options[document.getElementById('requestor').selectedIndex]?.text || '');
+  formData.append('country', document.getElementById('country').options[document.getElementById('country').selectedIndex]?.text || '');
+  formData.append('sector', document.getElementById('sector').options[document.getElementById('sector').selectedIndex]?.text || '');
+  formData.append('size', document.getElementById('size').options[document.getElementById('size').selectedIndex]?.text || '');
+  formData.append('speed', document.getElementById('speed').options[document.getElementById('speed').selectedIndex]?.text || '');
+  formData.append('quality', document.getElementById('quality').options[document.getElementById('quality').selectedIndex]?.text || '');
+  formData.append('experience', document.getElementById('experience').options[document.getElementById('experience').selectedIndex]?.text || '');
+  formData.append('physical_presence', document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled ? 'Yes' : 'No');
+  formData.append('start_date', document.getElementById('start').value);
+  formData.append('calculated_price', (liveSupportApplied ? finalPrice * 0.5 : finalPrice).toFixed(2));
+  formData.append('live_support', liveSupportApplied ? 'Yes' : 'No');
 
-      // Reset form
-      resetForm();
+  fetch('submit_proposal.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert(data);
+    resetForm();
+  })
+  .catch(error => {
+    showError('proposalError', 'Failed to submit proposal. Please try again.');
+    console.error('Submission error:', error);
+  });
+}
+    function editForm() {
+      document.getElementById('customMessage').classList.add('hidden');
+      document.getElementById('proposalSection').classList.remove('hidden');
     }
 
     function resetForm() {
-      document.getElementById('service').value = '600';
+      document.getElementById('category').value = '';
+      document.getElementById('service').value = '';
       document.getElementById('timemode').value = '1';
       document.getElementById('quantity').value = '5';
       document.getElementById('people').value = '2';
@@ -724,10 +1398,14 @@
       document.getElementById('submitButton').disabled = true;
       document.getElementById('result').innerText = 'Final Price: $0';
       document.getElementById('proposalSection').classList.add('hidden');
+      document.getElementById('customMessage').classList.add('hidden');
+      document.getElementById('serviceDescription').classList.add('hidden');
+      document.getElementById('service').classList.add('hidden');
+      document.getElementById('serviceLabel').classList.add('hidden');
       finalPrice = 0;
       liveSupportApplied = false;
       physicalPresenceApplied = false;
-      selectedService = 'Real-Time Disaster Monitoring System Deployment';
+      selectedService = '';
       billingMode = 'Per Day';
       updateQuantityLabel();
       toggleLiveSupport();
