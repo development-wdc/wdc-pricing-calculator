@@ -29,11 +29,14 @@ $debug_log = __DIR__ . '/../../debug.log';
 $phpmailer_log = __DIR__ . '/../../phpmailer.log';
 
 // Log script version for verification
-file_put_contents($debug_log, "Script Version: 2025-05-18-0655\n", FILE_APPEND);
+file_put_contents($debug_log, "Script Version: 2025-05-18-0710\n", FILE_APPEND);
 
 // Log environment variable for debugging
 $smtp_password = getenv('SMTP_PASSWORD') ?: 'vsii lmtr txur wmsd';
 file_put_contents($debug_log, "SMTP Password: " . (empty($smtp_password) ? 'Not set' : 'Set') . "\n", FILE_APPEND);
+
+// Log timeout header for verification
+file_put_contents($debug_log, "Timeout Set: 20 seconds\n", FILE_APPEND);
 
 // Log raw input for debugging
 $raw_input = file_get_contents('php://input');
