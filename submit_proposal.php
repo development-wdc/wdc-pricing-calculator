@@ -97,14 +97,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Initialize PHPMailer
     $mail = new PHPMailer(true);
     try {
-        // SMTP settings
+        // Enable PHPMailer debugging and log to a file
+        $mail->SMTPDebug = 2; // Debug level 2 for detailed output
+        $mail->Debugoutput = function($str, $level) {
+            file_put_contents('phpmailer.log', "[$level] $str\n", FILE_APPEND);
+        };
+
+        // SMTP settings (try port 465 with SSL first)
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'services@worlddisastercenter.org';
-        $mail->Password = 'vsii lmtr txur wmsd';
+        $mail->Password = 'vsii lmtr txur wmsd'; // Replace with your app password if changed
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
+
+        // Uncomment the following lines to try port 587 with TLS if port 465 fails
+        /*
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+        */
 
         // Email to WDC
         $mail->setFrom($email, $fullname);
