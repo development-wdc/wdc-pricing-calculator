@@ -4,9 +4,6 @@ ini_set('display_errors', '0');
 ini_set('display_startup_errors', '0');
 error_reporting(0);
 
-// Start output buffering to capture any stray output
-ob_start();
-
 // Clear any existing output buffers
 while (ob_get_level() > 0) {
     ob_end_clean();
@@ -19,7 +16,9 @@ use PHPMailer\PHPMailer\Exception;
 require __DIR__ . '/../../vendor/autoload.php';
 
 // Set response header to JSON
-header('Content-Type: application/json');
+header('Content-Type: application/json; charset=UTF-8');
+// Set Netlify Function timeout to 20 seconds (doubled from default 10 seconds)
+header('X-NF-Request-Timeout: 20');
 
 // Netlify Functions handler
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../..');
@@ -30,7 +29,11 @@ $debug_log = __DIR__ . '/../../debug.log';
 $phpmailer_log = __DIR__ . '/../../phpmailer.log';
 
 // Log script version for verification
-file_put_contents($debug_log, "Script Version: 2025-05-18-0635\n", FILE_APPEND);
+file_put_contents($debug_log, "Script Version: 2025-05-18-0655\n", FILE_APPEND);
+
+// Log environment variable for debugging
+$smtp_password = getenv('SMTP_PASSWORD') ?: 'vsii lmtr txur wmsd';
+file_put_contents($debug_log, "SMTP Password: " . (empty($smtp_password) ? 'Not set' : 'Set') . "\n", FILE_APPEND);
 
 // Log raw input for debugging
 $raw_input = file_get_contents('php://input');
@@ -158,7 +161,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'services@worlddisastercenter.org';
-    $mail->Password = getenv('SMTP_PASSWORD') ?: 'vsii lmtr txur wmsd'; // Fallback for local testing
+    $mail->Password = $smtp_password;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 

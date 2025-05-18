@@ -1358,18 +1358,47 @@
     submitButton.disabled = true;
     submitButton.innerText = 'Sending...';
 
-    // Simulate successful submission (since GitHub Pages can't run PHP)
-    setTimeout(() => {
-        submitButton.innerText = 'Sent';
-        submitButton.style.backgroundColor = '#065f46'; // Green color to indicate success
-        // Reset form after 2 more seconds
+    fetch('/submit_proposal.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(text => {
+                throw new Error(text || 'Request failed with status ' + response.status);
+            });
+        }
+        return response.json().catch(error => {
+            throw new Error('Failed to parse response as JSON: ' + error.message);
+        });
+    })
+    .then(data => {
+        // Animate button to "Sent" after 3 seconds
         setTimeout(() => {
-            resetForm();
-            submitButton.disabled = false;
-            submitButton.innerText = 'Confirm Submission';
-            submitButton.style.backgroundColor = '#0284c7'; // Revert to original color
-        }, 2000);
-    }, 3000);
+            submitButton.innerText = 'Sent';
+            submitButton.style.backgroundColor = '#065f46'; // Green color to indicate success
+            // Reset form after 2 more seconds
+            setTimeout(() => {
+                resetForm();
+                submitButton.disabled = false;
+                submitButton.innerText = 'Confirm Submission';
+                submitButton.style.backgroundColor = '#0284c7'; // Revert to original color
+            }, 2000);
+        }, 3000);
+
+        if (data.status === 200) {
+            // Success message already shown via button animation
+        } else {
+            throw new Error(data.message || 'Unexpected response status: ' + data.status);
+        }
+    })
+    .catch(error => {
+        submitButton.disabled = false;
+        submitButton.innerText = 'Confirm Submission';
+        submitButton.style.backgroundColor = '#0284c7'; // Revert to original color
+        showError('proposalError', error.message || 'Failed to submit proposal. Please try again.');
+        console.error('Submission error:', error);
+    });
 }
     function resetForm() {
       document.getElementById('category').value = '';
