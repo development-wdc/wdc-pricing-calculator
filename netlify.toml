@@ -1,0 +1,9 @@
+[build]
+  command = "composer install"
+  publish = "/"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/submit_proposal.php"
+  to = "/.netlify/functions/submit_proposal"
+  status = 200

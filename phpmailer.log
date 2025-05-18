@@ -318,3 +318,3523 @@
 
 [2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231d4adb3a2sm42147325ad.57 - gsmtp
 
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 12:34:57 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Hazard Mapping & Vulnerability Profiling from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <MTGpM8L6dVEe2gRYc8BtvkKys2ZH5iElFD2zs4kOQ@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Hazard Mapping & Vulnerability Profiling
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 173.33
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 170
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 12:34:57
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747571703 d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231d4ac9fc8sm43116065ad.27 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 12:35:03 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <FkpNzJi530suzalXyL9IHJdxfkQewkJaangC344MhOU@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Hazard Mapping & Vulnerability Profiling
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 173.33
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 170
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 12:34:57
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747571709 d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-742a982b9a0sm4622209b3a.108 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 12:51:03 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Hazard Mapping & Vulnerability Profiling from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <Bwu9gRe4aJtprUkPWI0cyAxhJVQ1mNqWaLQoZWBfLLA@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Hazard Mapping & Vulnerability Profiling
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 173.33
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 170
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 12:51:03
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747572670 d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231d4afec8dsm43343775ad.92 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 12:51:10 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <PWIRJEwhmw15MrIer1cWNWbehNsO4Xr2KAmJIMwFFI@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Hazard Mapping & Vulnerability Profiling
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 173.33
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 170
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 12:51:03
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747572677 d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-742a970b9c7sm4438277b3a.48 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 12:57:16 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Real-Time Situational Reporting from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <88ePNQEGRvpL8OipJSWVyLLG0Vv8IlQcNYk2rx0DVc@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Crisis Response and Coordination
+
+[1] CLIENT -> SERVER: Service: Real-Time Situational Reporting
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-30
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 26.00
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 26
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 12:57:16
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747573042 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-30e6f180902sm5436002a91.16 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 12:57:22 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <YndkB4XBZBAtzpisXCNpQMkdyJwQ1fO65tYAoNJmS8@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Crisis Response and Coordination
+
+[1] CLIENT -> SERVER: Service: Real-Time Situational Reporting
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-30
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 26.00
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 26
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 12:57:16
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747573048 d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-742a970bae4sm4465365b3a.43 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:04:42 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Emergency Drone Support (Eagle) from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <hsogXBWNeMphdlBgun0VRTAqnlxdHAphkThSH3eVv0@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Crisis Response and Coordination
+
+[1] CLIENT -> SERVER: Service: Emergency Drone Support (Eagle)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-31
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 312.00
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 300
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:04:42
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747573488 d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-742a96dfafbsm4500029b3a.4 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:04:48 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <wjTWTsJD7wpi79nUIWunBV56oY3KDmKXtcgxqIm9DJQ@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Crisis Response and Coordination
+
+[1] CLIENT -> SERVER: Service: Emergency Drone Support (Eagle)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-31
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 312.00
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 300
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:04:42
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747573493 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-b26f0824702sm4007816a12.62 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:14:50 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Emergency Drone Support (Eagle) from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <uXks2gsP10t0fU9q9icR03p24BQtsq3GpPGkJUynk@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Crisis Response and Coordination
+
+[1] CLIENT -> SERVER: Service: Emergency Drone Support (Eagle)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-31
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 312.00
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 300
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:14:50
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574096 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-b26f55ee652sm3515237a12.53 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:14:56 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <dCIGlYyg5aA11Qgcj4cu2ymcAWbsXy6efgFRNlX0E2o@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Crisis Response and Coordination
+
+[1] CLIENT -> SERVER: Service: Emergency Drone Support (Eagle)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-31
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 312.00
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 300
+
+[1] CLIENT -> SERVER: Explanation: OK
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:14:50
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574101 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-b270543ef6dsm1671038a12.29 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sapiens@ndatabaye.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:21:24 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Rapid Field Assessment Tools (Michael Kit, Collector) from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <dYHf5LNxSWdwwpfxmUzcRZkKiKjKFe10saFfZAlU@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Rapid Field Assessment Tools (Michael Kit, Collector)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-27
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 190.67
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sapiens@ndatabaye.com
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 190
+
+[1] CLIENT -> SERVER: Explanation: cf dsfghghhnhshn
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:21:24
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574489 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-b26eaf5c6bbsm4600118a12.6 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sapiens@ndatabaye.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sapiens@ndatabaye.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:21:29 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <aCUHf6pPscHB1NzQPRzO4sUPfdTaD3hnhzcmInhhRbM@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Rapid Field Assessment Tools (Michael Kit, Collector)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-27
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 190.67
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sapiens@ndatabaye.com
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 190
+
+[1] CLIENT -> SERVER: Explanation: cf dsfghghhnhshn
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:21:24
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574495 d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231e069c59dsm40532375ad.7 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sapiens@ndatabaye.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:26:11 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Rapid Field Assessment Tools (Michael Kit, Collector) from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <MmdHWZWdjvIxtCIKeOciGuz3SYZKzAWUsXybPWVw@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Rapid Field Assessment Tools (Michael Kit, Collector)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-27
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 95.33
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sapiens@ndatabaye.com
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 190
+
+[1] CLIENT -> SERVER: Explanation: cf dsfghghhnhshn
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:26:11
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574776 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-b26eaf8de24sm4604037a12.36 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sapiens@ndatabaye.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sapiens@ndatabaye.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:26:16 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sapiens@ndatabaye.com>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <Jso9HcOHQPzXjqvxAcK7TtZSmmdE6tJoUZnE3Un7QJ4@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Rapid Field Assessment Tools (Michael Kit, Collector)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Day
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-27
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Junior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 95.33
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sapiens@ndatabaye.com
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 190
+
+[1] CLIENT -> SERVER: Explanation: cf dsfghghhnhshn
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:26:11
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574782 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-30e7d4aa777sm4848742a91.21 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:27:04 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Risk Index Development for Countries or Sectors from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <P9dpnmK19T3fhfoLScetVV2tavASLAg7jYceVDCK83k@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Risk Index Development for Countries or Sectors
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-24
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Senior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 28.42
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 28
+
+[1] CLIENT -> SERVER: Explanation: dkjdkjssdjkfjsf
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:27:04
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574831 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-30e33451984sm8474775a91.23 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:27:11 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <kPFD8btTikVNiKTqBcKZFfuBWvlGwLX7RLOYCNMUc@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Risk Index Development for Countries or Sectors
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-24
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Senior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 28.42
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 28
+
+[1] CLIENT -> SERVER: Explanation: dkjdkjssdjkfjsf
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:27:04
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747574837 d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231d4eba501sm43546785ad.173 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:30:17 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Risk Index Development for Countries or Sectors from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <CMGbxZltNJDXx490eMFDdYBC0qF1nmbc3cnqA6POQ@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Risk Index Development for Countries or Sectors
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-24
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Senior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 28.42
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 28
+
+[1] CLIENT -> SERVER: Explanation: dkjdkjssdjkfjsf
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:30:17
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747575022 d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231d4ed4ecfsm43493725ad.234 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:30:22 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <6OgqfVkaAZBRK4xqSEwIQpiyIDSki41KfrTm2jR3Pc@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Risk Assessment and Mapping
+
+[1] CLIENT -> SERVER: Service: Risk Index Development for Countries or Sectors
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-24
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Senior
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 28.42
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 28
+
+[1] CLIENT -> SERVER: Explanation: dkjdkjssdjkfjsf
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:30:17
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747575028 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-b26eaf5a0d0sm4602709a12.14 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:31:25 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Custom Early Warning Systems (Local or National Scale) from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <DGJ8aNPai5wS2T5LBO4lePQJWZss1MFMfXawrIsF1s@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Disaster Monitoring and Early Warning
+
+[1] CLIENT -> SERVER: Service: Custom Early Warning Systems (Local or National Scale)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Medium
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 2229.97
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 2220
+
+[1] CLIENT -> SERVER: Explanation: JDNDNCJNFKCMCFKMFKF
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:31:25
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747575091 d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231d4e97db8sm43749935ad.110 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:31:31 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <tOPctlaYUEruKksE5QFcHEq5drhKEIta9FbdtfpZVx4@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Disaster Monitoring and Early Warning
+
+[1] CLIENT -> SERVER: Service: Custom Early Warning Systems (Local or National Scale)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Medium
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 2229.97
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 2220
+
+[1] CLIENT -> SERVER: Explanation: JDNDNCJNFKCMCFKMFKF
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:31:25
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747575096 d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-231d4e97db8sm43750985ad.110 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<services@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:34:08 +0000
+
+[1] CLIENT -> SERVER: To: services@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: New Pricing Proposal: Custom Early Warning Systems (Local or National Scale) from WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Message-ID: <wA6gqROIY975QzYktrknUJpbLM5dnW6TqkE0vZXIWI@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Disaster Monitoring and Early Warning
+
+[1] CLIENT -> SERVER: Service: Custom Early Warning Systems (Local or National Scale)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Medium
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 2229.97
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 2220
+
+[1] CLIENT -> SERVER: Explanation: JDNDNCJNFKCMCFKMFKF
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:34:08
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747575255 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-30ec97c33e8sm1915412a91.32 - gsmtp
+
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [24.114.37.62]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<sndatabaye@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<office@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<dngaka@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<finance@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<admin@worlddisastercenter.org>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sun, 18 May 2025 13:34:15 +0000
+
+[1] CLIENT -> SERVER: To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: From: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Cc: office@worlddisastercenter.org, dngaka@worlddisastercenter.org, finance@worlddisastercenter.org, admin@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Reply-To: SAPIENS NDATABAYE <sndatabaye@worlddisastercenter.org>
+
+[1] CLIENT -> SERVER: Subject: WDC Proposal Submission Confirmation
+
+[1] CLIENT -> SERVER: Message-ID: <buAo670auYSUzLb0jZ2pBcnfSy3ZGAHazuVkpsRVc@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank You for Your WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Dear SAPIENS NDATABAYE,
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Thank you for submitting your proposal to the World Disaster Center. Below is a recap of your submission:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: WDC Pricing Proposal Submission
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Service Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Category: Disaster Monitoring and Early Warning
+
+[1] CLIENT -> SERVER: Service: Custom Early Warning Systems (Local or National Scale)
+
+[1] CLIENT -> SERVER: Billing Mode: Per Hour
+
+[1] CLIENT -> SERVER: Phase: Response
+
+[1] CLIENT -> SERVER: Start Date: 2025-05-22
+
+[1] CLIENT -> SERVER: Requestor Type: Very Small Requestor (e.g., Community Group, Solo Volunteer)
+
+[1] CLIENT -> SERVER: Country Type: Low-income
+
+[1] CLIENT -> SERVER: Sector Type: WASH/Environment
+
+[1] CLIENT -> SERVER: Organization Size: Small
+
+[1] CLIENT -> SERVER: Deployment Speed: Normal
+
+[1] CLIENT -> SERVER: Quality: Standard
+
+[1] CLIENT -> SERVER: Experience Level: Medium
+
+[1] CLIENT -> SERVER: Physical Presence: Yes
+
+[1] CLIENT -> SERVER: Live Support: Yes
+
+[1] CLIENT -> SERVER: Calculated Price: 2229.97
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Client Information:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Name: SAPIENS NDATABAYE
+
+[1] CLIENT -> SERVER: Organization: WORLD DISASTER CENTER
+
+[1] CLIENT -> SERVER: Email: sndatabaye@worlddisastercenter.org
+
+[1] CLIENT -> SERVER: Role: CEO
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Proposal Details:
+
+[1] CLIENT -> SERVER: -----------------
+
+[1] CLIENT -> SERVER: Proposed Price: 2220
+
+[1] CLIENT -> SERVER: Explanation: JDNDNCJNFKCMCFKMFKF
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Submission Time: 2025-05-18 13:34:08
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Our team will review your proposal and contact you soon.
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Best regards,
+
+[1] CLIENT -> SERVER: World Disaster Center Team
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1747575262 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-b26eb081aafsm4552698a12.47 - gsmtp
+

@@ -1328,48 +1328,49 @@
     }
 
     function confirmSubmission() {
-  const formData = new FormData();
-  formData.append('category', document.getElementById('category').options[document.getElementById('category').selectedIndex]?.text || '');
-  formData.append('service', selectedService);
-  formData.append('fullname', document.getElementById('fullname').value.trim());
-  formData.append('organization', document.getElementById('organization').value.trim());
-  formData.append('email', document.getElementById('email').value.trim());
-  formData.append('role', document.getElementById('role').value.trim());
-  formData.append('suggested', document.getElementById('suggested').value);
-  formData.append('explanation', document.getElementById('explanation').value.trim());
-  formData.append('billing_mode', billingMode);
-  formData.append('phase', document.getElementById('phase').options[document.getElementById('phase').selectedIndex]?.text || '');
-  formData.append('requestor', document.getElementById('requestor').options[document.getElementById('requestor').selectedIndex]?.text || '');
-  formData.append('country', document.getElementById('country').options[document.getElementById('country').selectedIndex]?.text || '');
-  formData.append('sector', document.getElementById('sector').options[document.getElementById('sector').selectedIndex]?.text || '');
-  formData.append('size', document.getElementById('size').options[document.getElementById('size').selectedIndex]?.text || '');
-  formData.append('speed', document.getElementById('speed').options[document.getElementById('speed').selectedIndex]?.text || '');
-  formData.append('quality', document.getElementById('quality').options[document.getElementById('quality').selectedIndex]?.text || '');
-  formData.append('experience', document.getElementById('experience').options[document.getElementById('experience').selectedIndex]?.text || '');
-  formData.append('physical_presence', document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled ? 'Yes' : 'No');
-  formData.append('start_date', document.getElementById('start').value);
-  formData.append('calculated_price', (liveSupportApplied ? finalPrice * 0.5 : finalPrice).toFixed(2));
-  formData.append('live_support', liveSupportApplied ? 'Yes' : 'No');
+    const formData = new FormData();
+    formData.append('category', document.getElementById('category').options[document.getElementById('category').selectedIndex]?.text || '');
+    formData.append('service', selectedService);
+    formData.append('fullname', document.getElementById('fullname').value.trim());
+    formData.append('organization', document.getElementById('organization').value.trim());
+    formData.append('email', document.getElementById('email').value.trim());
+    formData.append('role', document.getElementById('role').value.trim());
+    formData.append('suggested', document.getElementById('suggested').value);
+    formData.append('explanation', document.getElementById('explanation').value.trim());
+    formData.append('billing_mode', billingMode);
+    formData.append('phase', document.getElementById('phase').options[document.getElementById('phase').selectedIndex]?.text || '');
+    formData.append('requestor', document.getElementById('requestor').options[document.getElementById('requestor').selectedIndex]?.text || '');
+    formData.append('country', document.getElementById('country').options[document.getElementById('country').selectedIndex]?.text || '');
+    formData.append('sector', document.getElementById('sector').options[document.getElementById('sector').selectedIndex]?.text || '');
+    formData.append('size', document.getElementById('size').options[document.getElementById('size').selectedIndex]?.text || '');
+    formData.append('speed', document.getElementById('speed').options[document.getElementById('speed').selectedIndex]?.text || '');
+    formData.append('quality', document.getElementById('quality').options[document.getElementById('quality').selectedIndex]?.text || '');
+    formData.append('experience', document.getElementById('experience').options[document.getElementById('experience').selectedIndex]?.text || '');
+    formData.append('physical_presence', document.getElementById('physicalPresence').checked && !document.getElementById('physicalPresence').disabled ? 'Yes' : 'No');
+    formData.append('start_date', document.getElementById('start').value);
+    formData.append('calculated_price', (liveSupportApplied ? finalPrice * 0.5 : finalPrice).toFixed(2));
+    formData.append('live_support', liveSupportApplied ? 'Yes' : 'No');
 
-  fetch('submit_proposal.php', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => response.text())
-  .then(data => {
-    alert(data);
-    resetForm();
-  })
-  .catch(error => {
-    showError('proposalError', 'Failed to submit proposal. Please try again.');
-    console.error('Submission error:', error);
-  });
+    console.log([...formData.entries()]);
+
+    // Show loading state
+    const submitButton = document.querySelector('#customMessage button[onclick="confirmSubmission()"]');
+    submitButton.disabled = true;
+    submitButton.innerText = 'Sending...';
+
+    // Simulate successful submission (since GitHub Pages can't run PHP)
+    setTimeout(() => {
+        submitButton.innerText = 'Sent';
+        submitButton.style.backgroundColor = '#065f46'; // Green color to indicate success
+        // Reset form after 2 more seconds
+        setTimeout(() => {
+            resetForm();
+            submitButton.disabled = false;
+            submitButton.innerText = 'Confirm Submission';
+            submitButton.style.backgroundColor = '#0284c7'; // Revert to original color
+        }, 2000);
+    }, 3000);
 }
-    function editForm() {
-      document.getElementById('customMessage').classList.add('hidden');
-      document.getElementById('proposalSection').classList.remove('hidden');
-    }
-
     function resetForm() {
       document.getElementById('category').value = '';
       document.getElementById('service').value = '';
