@@ -1,5 +1,4 @@
 [build]
-  base = "/"  # Explicitly set the base directory to the project root
-  command = "composer install"  # Build command to install PHP dependencies
-  publish = "/"  # Publish the root directory (where index.html is)
-  functions = "netlify/functions"  # Directory for Netlify Functions
+  base = "/"
+  publish = "/"
+  functions = "netlify/functions"

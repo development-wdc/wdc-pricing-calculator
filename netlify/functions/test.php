@@ -14,7 +14,7 @@ ob_start();
 header('Content-Type: application/json; charset=UTF-8');
 
 // Return a simple JSON response
-$response = ['status' => 200, 'message' => 'Submit Proposal Function is working'];
+$response = ['status' => 200, 'message' => 'Test Function is working'];
 ob_end_clean();
 echo json_encode($response);
 exit;
