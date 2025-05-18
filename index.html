@@ -1358,7 +1358,7 @@
     submitButton.disabled = true;
     submitButton.innerText = 'Sending...';
 
-    fetch('/submit_proposal.php', {
+    fetch('/.netlify/functions/submit_proposal', {  // Updated to directly call the Netlify Function endpoint
         method: 'POST',
         body: formData
     })

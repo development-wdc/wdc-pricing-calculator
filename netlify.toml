@@ -6,4 +6,4 @@
 [[redirects]]
   from = "/submit_proposal.php"
   to = "/.netlify/functions/submit_proposal"
-  status = 200
+  status = 200  
